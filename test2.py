@@ -9,6 +9,7 @@ def validate_name(name):
             return "Hello " + name
 #Input name, output message
 
-print("hva heter du?")
+print("Hello World")
+print("Hva heter du?")
 name = input()
 print(validate_name(name))
