@@ -15,7 +15,7 @@ body {
     "footer";
 }
 
-.header {
+header {
   grid-area: "header";
   display: flex;
   justify-content: center;
@@ -23,12 +23,12 @@ body {
   background-size: cover;
 }
 
-.header p {
+header p {
   color: white;
   font-size: 1rem;
 }
 
-.nav-bar {
+nav {
   grid-area: "nav";
   background-color: black;
   display: flex;
@@ -36,23 +36,23 @@ body {
   align-items: center;
 }
 
-.nav-bar ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-bar ul li {
+nav ul li {
   display: inline-block;
 }
 
-.nav-bar ul li a {
+nav ul li a {
   color: white;
   margin: 1rem;
   text-decoration: none;
 }
 
-.nav-bar ul li a:hover {
+nav ul li a:hover {
   background-color: rgb(71, 3, 71);
 }
 
@@ -111,7 +111,7 @@ article {
   background-color: rgb(243, 242, 242);
 }
 
-.sosialmedia {
+.sosialmedia{
   grid-area: "footer";
   display: flex;
   justify-content: space-evenly;
