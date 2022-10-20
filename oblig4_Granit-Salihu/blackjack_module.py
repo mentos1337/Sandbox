@@ -1,4 +1,6 @@
-kortList = {"Two of clubs": 2, "Three of clubs": 3, "Four of clubs": 4, "Five of clubs": 5, "Six of clubs": 6,
+import random
+
+full_deck = {"Two of clubs": 2, "Three of clubs": 3, "Four of clubs": 4, "Five of clubs": 5, "Six of clubs": 6,
              "Seven of clubs": 7, "Eight of clubs": 8, "Nine of clubs": 9, "Ten of clubs": 10,
              "Jack of clubs": 10, "Queen of clubs": 10, "King of clubs": 10, "Ace of clubs": 11,
              "Two of diamonds": 2, "Three of diamonds": 3, "Four of diamonds": 4, "Five of diamonds": 5,
@@ -12,7 +14,22 @@ kortList = {"Two of clubs": 2, "Three of clubs": 3, "Four of clubs": 4, "Five of
              "Seven of spades": 7, "Eight of spades": 8, "Nine of spades": 9, "Ten of spades": 10,
              "Jack of spades": 10, "Queen of spades": 10, "King of spades": 10, "Ace of spades": 11,
              }
-class cards:
-    def __init__(self, card):
-        self.card = card
-    def 
+
+
+def get_new_shuffled_deck():
+    deck = list(full_deck.keys())
+    random.shuffle(deck)
+    return deck
+
+
+def get_card_value(card):
+    return full_deck[card]
+
+
+def calculate_hand_value(hand):
+    hand_value = 0
+
+    for card in hand:
+        hand_value += get_card_value(card)
+
+    return hand_value
