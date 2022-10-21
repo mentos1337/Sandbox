@@ -79,26 +79,36 @@ main{
 }
 
 .artikkelkort img{
-    height: 300px;
+    height: 350px;
     width: 100%;
 }
 
 article{
     box-shadow: 0px 6px 6px 4px rgba(0, 0, 0, 0.26);
-    width: 30%;
+    width: 40%;
     background-color: rgb(243, 242, 242);
 }
 
 .Tabell{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0 5rem 0 5rem;
+    grid-template-columns: repeat(4, 5fr);
+    padding: 0 10rem 0 10rem;
 }
 
 .Rad{
     display: flex;
     justify-content: center;
-    border-style: solid;
+    border-bottom: solid;
+    border-right: solid;
+    border-color: rgba(0, 0, 0, 0.514);
+}
+
+.Rad p{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 55%;
+    font-size: 12px;
 }
 
 .googlemaps{
@@ -150,5 +160,11 @@ i{
     
     .sosialmedia{
         flex-direction: column;
+    }
+
+    .Tabell{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 1.5rem 0 1.5rem;
     }
 }
