@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 3rem 2.5rem auto 3rem;
+    grid-template-rows: 3rem 2.5rem auto auto;
     grid-template-areas: 
         "header"
         "nav"
@@ -65,7 +65,7 @@ main{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem 0 1rem 0;
 }
 
 .artikkelkort h3{
@@ -87,6 +87,18 @@ article{
     box-shadow: 0px 6px 6px 4px rgba(0, 0, 0, 0.26);
     width: 30%;
     background-color: rgb(243, 242, 242);
+}
+
+.Tabell{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 5rem 0 5rem;
+}
+
+.Rad{
+    display: flex;
+    justify-content: center;
+    border-style: solid;
 }
 
 .googlemaps{

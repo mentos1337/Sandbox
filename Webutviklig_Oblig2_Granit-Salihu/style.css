@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: 3rem 2.5rem auto 3rem;
+  grid-template-rows: 3rem 2.5rem auto auto;
   grid-template-areas:
     "header"
     "nav"
