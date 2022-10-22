@@ -79,7 +79,7 @@ main{
 }
 
 .artikkelkort img{
-    height: 350px;
+    height: 400px;
     width: 100%;
 }
 
@@ -91,8 +91,8 @@ article{
 
 .Tabell{
     display: grid;
-    grid-template-columns: repeat(4, 5fr);
-    padding: 0 10rem 0 10rem;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    padding: 0 3rem 0 3rem;
 }
 
 .Rad{
@@ -109,13 +109,13 @@ article{
 
 .Rad ul li{
     margin: auto;
-    padding-bottom: 0.2rem;
-    font-size: 16px;
+    font-size: 0.6rem;
+    padding-bottom: 0.35rem;
 }
-.Rad ul li p{
-    font-size: 10px;
-}
+
 .Rad img{
+    height: 180px;
+    width: 160px;
     margin: auto;
 }
 .googlemaps{
@@ -170,8 +170,6 @@ i{
     }
 
     .Tabell{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
         padding: 0 1.5rem 0 1.5rem;
     }
 }
