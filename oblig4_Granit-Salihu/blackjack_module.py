@@ -33,3 +33,17 @@ def calculate_hand_value(hand):
         hand_value += get_card_value(card)
 
     return hand_value
+
+def add_card():
+    cardlist = list(get_new_shuffled_deck)
+    
+
+def print_result(dealer, player):
+    if dealer >= 21:
+        print("Dealeren har mer enn 21 og bustet")
+    if player >= dealer and player >= 21:
+        print("Player won")
+    if dealer >= player and dealer >= 21:
+       print("Player won")
+    if player == dealer:
+        print("No one won")

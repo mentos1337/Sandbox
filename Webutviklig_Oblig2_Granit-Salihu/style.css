@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  grid-area: "header";
+  grid-area: header;
   display: flex;
   justify-content: center;
   background-image: url("./img/low-poly-abstract-background-free-vector.jpg"); /*kilde:https://www.vecteezy.com/vector-art/2088792-low-poly-abstract-background*/
@@ -29,7 +29,7 @@ header p {
 }
 
 nav {
-  grid-area: "nav";
+  grid-area: nav;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,7 @@ main {
 }
 
 .intro {
-  grid-area: "main";
+  grid-area: main;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +77,7 @@ main {
 }
 
 .artikkelkort-kontainer {
-  grid-area: "main";
+  grid-area: main;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -112,7 +112,7 @@ article {
 }
 
 .sosialmedia{
-  grid-area: "footer";
+  grid-area: footer;
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(20, 13, 1);
