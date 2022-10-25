@@ -2,6 +2,8 @@ import dearpygui.dearpygui as dpg
 
 def callback_funksjon():
     print("du har trykket")
+
+
 dpg.create_context()
 dpg.create_viewport(title="Simple button click", width=600, height=400)
 
