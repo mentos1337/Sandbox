@@ -35,15 +35,16 @@ def calculate_hand_value(hand):
     return hand_value
 
 def add_card():
-    cardlist = list(get_new_shuffled_deck)
-    
+    card_list = list(full_deck.items())
+    get_rnd_card = random.choice(card_list)
+    return(get_rnd_card)
 
 def print_result(dealer, player):
-    if dealer >= 21:
+    if dealer > 21:
         print("Dealeren har mer enn 21 og bustet")
-    if player >= dealer and player >= 21:
+    if player > dealer and player < 21:
         print("Player won")
-    if dealer >= player and dealer >= 21:
+    if dealer > player and dealer < 21:
        print("Player won")
     if player == dealer:
         print("No one won")
