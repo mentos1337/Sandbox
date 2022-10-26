@@ -6,16 +6,19 @@ player_value = 0
 dealer_hand = []
 dealer_value = 0
 
-def dealer_draw_card():
+def draw_card():
     card_name = card_list[randrange(0, len(card_list))]
     card_number = bjm.get_card_value(card_name)
-    dealer_hand.append(card_name)
-    dealer_value += card_number
+    return {"navn":card_name, "verdi":card_number}
 
-
+def dealer_draw_card():
+    dealer_card = draw_card()
+    dealer_value = dealer_value + dealer_card["verdi"] 
+    dealer_hand.append(dealer_card['navn'])
 
 dealer_draw_card()
-print(dealer_hand,dealer_value)
+
+print(dealer_hand)
 
 # if player_value == 21:
 #     print("Du har blackjack")
