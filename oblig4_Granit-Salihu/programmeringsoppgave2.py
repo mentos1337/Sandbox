@@ -9,25 +9,57 @@ dealer_value = 0
 def draw_card():
     card_name = card_list[randrange(0, len(card_list))]
     card_number = bjm.get_card_value(card_name)
+    card_list.remove(card_name)
     return {"navn":card_name, "verdi":card_number}
+
 
 def dealer_draw_card():
     dealer_card = draw_card()
+    global dealer_value
     dealer_value = dealer_value + dealer_card["verdi"] 
-    dealer_hand.append(dealer_card['navn'])
+    dealer_hand.append(dealer_card["navn"])
 
-dealer_draw_card()
 
-print(dealer_hand)
+def player_draw_card():
+    player_card = draw_card()
+    global player_value
+    player_value = player_value + player_card["verdi"] 
+    player_hand.append(player_card["navn"])
 
-# if player_value == 21:
-#     print("Du har blackjack")
-# elif player_value > 21:
-#     print("1- Hit")
-#     print("2- Stand")
-#     player_choice = input()
-#     print(f"You chose to {player_choice}")
-#     if player_choice == 1:
-#         print("cool")
-#     elif player_choice == 2:
-#         print(f"Dealer had {dealer_hand} with a value of {dealer_value}")
+
+
+#Draw cards
+while len(player_hand) < 2:
+    player_draw_card()
+while len(dealer_hand) < 2:
+    dealer_draw_card()
+print(card_list)
+#Game flow
+while player_value < 21 or dealer_value < 21:
+    print(f"Dealer has a {dealer_hand[0]}")
+    print(f"You have {player_hand} with a combined value of {player_value}")
+    print("1- Hit \n2- Stand" )
+    player_choice = input()
+    if player_choice == "1":
+        player_draw_card()
+        print(f"You have {player_hand} with a combined value of {player_value}")
+        bjm.print_result(dealer_value,player_value)
+        if player_value == 21:
+            print("Du har blackjack")
+        elif player_value > 21:
+            print("You busted")
+            break
+        elif player_value < 21:
+            print(player_value)
+            print("1- Hit \n 2- Stand" )
+    elif player_choice == "2":
+        print(f"You had {player_hand} with a value of {player_value}")
+        print(f"Dealer had {dealer_hand} with a value of {dealer_value}")
+        bjm.print_result(dealer_value,player_value)
+        play_again = print(input("Would you like to play again? (Y/N)"))
+        if play_again == "y":
+            player_hand = []
+            dealer_hand = []
+            player_value = 0
+            dealer_value = 0
+            continue

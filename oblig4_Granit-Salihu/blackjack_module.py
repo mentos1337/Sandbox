@@ -41,10 +41,14 @@ def add_card():
 
 def print_result(dealer, player):
     if dealer > 21:
-        print("Dealeren har mer enn 21 og bustet")
-    if player > dealer and player < 21:
+        print("Dealeren har mer enn 21 og bustet\nPlayer Won")
+    elif player > dealer and player <= 21:
         print("Player won")
-    if dealer > player and dealer < 21:
-       print("Player won")
-    if player == dealer:
+    elif dealer > player and dealer > 21:
+        print("Player won")
+    elif player == dealer:
         print("No one won")
+    elif dealer > player and dealer <= 21:
+        print("Dealer won")
+    elif player > dealer and player > 21:
+        print("Dealer won")
