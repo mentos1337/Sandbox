@@ -1,10 +1,6 @@
 from random import randrange
 import blackjack_module as bjm
 card_list = bjm.get_new_shuffled_deck()
-player_hand = []
-player_value = 0
-dealer_hand = []
-dealer_value = 0
 
 def draw_card():
     card_name = card_list[randrange(0, len(card_list))]
