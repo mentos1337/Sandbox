@@ -74,7 +74,7 @@ main{
 }
 
 .artikkelkort p{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-align: start;
     margin: 0 0.4rem 2rem 0.4rem;
 }
@@ -115,6 +115,11 @@ article{
     padding-bottom: 0.35rem;
 }
 
+.Rad img{
+    max-height: 200px;
+    height: 100%;
+    width: 100%;
+}
 .googlemaps{
     display: flex;
     justify-content: center;
@@ -168,8 +173,5 @@ i{
 
     .Tabell{
         padding: 0 1.5rem 0 1.5rem;
-    }
-    .Rad ul li{
-        font-size: 0.7rem;
     }
 }
