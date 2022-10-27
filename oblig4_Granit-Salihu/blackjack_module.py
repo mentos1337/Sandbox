@@ -40,9 +40,7 @@ def add_card():
     return(get_rnd_card)
 
 def print_result(dealer, player):
-    if dealer > 21:
-        print("Dealeren har mer enn 21 og bustet\nPlayer Won")
-    elif player > dealer and player <= 21:
+    if player > dealer and player <= 21:
         print("Player won")
     elif dealer > player and dealer > 21:
         print("Player won")
@@ -52,3 +50,5 @@ def print_result(dealer, player):
         print("Dealer won")
     elif player > dealer and player > 21:
         print("Dealer won")
+    elif dealer > 21:
+        print("Dealeren har mer enn 21 og bustet\nPlayer Won")
