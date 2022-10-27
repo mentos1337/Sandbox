@@ -41,8 +41,6 @@ while game == True:
     player_choice = input()
     if player_choice == "1":
         player_draw_card()
-        print(f"You have {player_hand} with a combined value of {player_value}")
-        bjm.print_result(dealer_value,player_value)
         if player_value == 21:
             print("Du har blackjack")
         elif player_value > 21:
