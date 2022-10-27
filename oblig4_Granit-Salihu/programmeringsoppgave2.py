@@ -52,7 +52,7 @@ while game == True:
     player_choice = input()
     if player_choice == "1":
         print("You chose to Hit")
-        player_draw_card()e
+        player_draw_card()
         dealer_draw_card()
         print(f"You have {player_hand} with a combined value of {player_value}")
         if dealer_value or player_value >= 21:
