@@ -1,10 +1,6 @@
 from random import randrange
 import blackjack_module as bjm
 card_list = bjm.get_new_shuffled_deck()
-player_hand = []
-player_value = 0
-dealer_hand = []
-dealer_value = 0
 
 def draw_card():
     card_name = card_list[randrange(0, len(card_list))]
@@ -27,28 +23,32 @@ def player_draw_card():
     player_hand.append(player_card["navn"])
 
 
-
-#Draw cards
-while len(player_hand) < 2:
-    player_draw_card()
-while len(dealer_hand) < 2:
-    dealer_draw_card()
-print(card_list)
+game = True
 #Game flow
-while player_value < 21 or dealer_value < 21:
+while game == True:
+    player_hand = []
+    player_value = 0
+    dealer_hand = []
+    dealer_value = 0
+    #Draw cards to start
+    while len(player_hand) < 2:
+        player_draw_card()
+    while len(dealer_hand) < 2:
+        dealer_draw_card()
+
     print(f"Dealer has a {dealer_hand[0]}")
     print(f"You have {player_hand} with a combined value of {player_value}")
-    print("1- Hit \n2- Stand" )
+    print("1- Hit \n2- Stand")
     player_choice = input()
     if player_choice == "1":
         player_draw_card()
         print(f"You have {player_hand} with a combined value of {player_value}")
-        bjm.print_result(dealer_value,player_value)
         if player_value == 21:
             print("Du har blackjack")
+            bjm.print_result(dealer_value,player_value)
         elif player_value > 21:
             print("You busted")
-            break
+            bjm.print_result(dealer_value,player_value)
         elif player_value < 21:
             print(player_value)
             print("1- Hit \n 2- Stand" )
@@ -62,4 +62,3 @@ while player_value < 21 or dealer_value < 21:
             dealer_hand = []
             player_value = 0
             dealer_value = 0
-            continue
