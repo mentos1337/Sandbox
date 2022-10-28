@@ -1,3 +1,4 @@
+from calendar import c
 from random import randrange
 import blackjack_module as bjm
 card_list = bjm.get_new_shuffled_deck()
@@ -27,7 +28,7 @@ def calculate_result(dealer, player, bet_amount, player_coin):
     if player > dealer and player <= 21:
         print("Player won")
         if player == 21:
-            return (bet_amount * 2) + player_coin
+            return player_coin + (bet_amount * 2)
         else:
             return bet_amount + player_coin
     elif dealer > player and dealer > 21:
@@ -35,6 +36,7 @@ def calculate_result(dealer, player, bet_amount, player_coin):
         return bet_amount + player_coin
     elif player == dealer:
         print("No one won")
+        return player_coin
     elif dealer > player and dealer <= 21:
         print("Dealer won")
         return player_coin - bet_amount
@@ -60,7 +62,6 @@ def play_again():
     return True
 
 while True:
-    global isAce
     #Player values
     player_hand = []
     dealer_hand = []
@@ -81,11 +82,11 @@ while True:
 
         #Game flow
         if dealer_value > 21:
-            if any("Ace" in s for s in dealer_hand):
+            if any("Ace" in ace for ace in dealer_hand):
                 dealer_value -= 10
                 continue
         if player_value > 21:
-            if any("Ace" in s for s in player_hand):
+            if any("Ace" in ace for ace in player_hand):
                 player_value -= 10
                 continue
         if dealer_value >= 21 or player_value >= 21:
@@ -94,29 +95,35 @@ while True:
             player_coin = calculate_result(dealer_value, player_value, bet_amount, player_coin)
             break
 
-        elif dealer_value < 21 and player_value < 21:
-            print(f"Dealer has a {dealer_hand[0]}")
-            print(f"You have {player_hand} with a combined value of {player_value}")
-            print("1- Hit \n2- Stand" )
-            player_choice = input()
-            if player_choice == "1":
-                print("You chose to Hit")
-                player_draw_card()
-                while dealer_value < 17:
-                    dealer_draw_card()
-                    if dealer_value > 17:
+        while True:
+            if dealer_value < 21 and player_value < 21:
+                print(f"Dealer has a {dealer_hand[0]}")
+                print(f"You have {player_hand} with a combined value of {player_value}")
+                print("1- Hit \n2- Stand" )
+                player_choice = input()
+                if player_choice == "1":
+                    print("You chose to Hit")
+                    player_draw_card()
+                    while dealer_value < 17:
+                        dealer_draw_card()
+                        if dealer_value > 17:
+                            continue
+                    if player_value >= 21 or dealer_value >= 21:
+                        print(f"You had {player_hand} with a value of {player_value}")
+                        print(f"Dealer had {dealer_hand} with a value of {dealer_value}")
+                        player_coin = calculate_result(dealer_value, player_value, bet_amount, player_coin)
+                        break
+                elif player_choice == "2":
+                    print("You chose to Stand")
+                    while dealer_value < 17:
+                        dealer_draw_card()
                         continue
-            elif player_choice == "2":
-                while dealer_value < 17:
-                    dealer_draw_card()
-                    continue
-        print("You chose to Stand")
-        print(f"You had {player_hand} with a value of {player_value}")
-        print(f"Dealer had {dealer_hand} with a value of {dealer_value}")
-        player_coin = calculate_result(dealer_value, player_value, bet_amount, player_coin)
-
-
+                    print(f"You had {player_hand} with a value of {player_value}")
+                    print(f"Dealer had {dealer_hand} with a value of {dealer_value}")
+                    player_coin = calculate_result(dealer_value, player_value, bet_amount, player_coin)
+                    break
         if play_again():
+            card_list = bjm.get_new_shuffled_deck()
             player_hand = []
             dealer_hand = []
             player_value = 0
