@@ -24,15 +24,13 @@ def player_draw_card():
 
 def playagain():
     play_again = print(input("Would you like to play again? (Y/N)"))
-    if play_again == "y":
+    if play_again == "Y" or play_again == "y":
         return "y"
-    elif play_again == "n":
-        return "n"
 
 
-game = True
 
-while game == True:
+
+while True:
     #Player values
     player_hand = []
     dealer_hand = []
@@ -46,23 +44,29 @@ while game == True:
         dealer_draw_card()
 
     #Game flow
-    print(f"Dealer has a {dealer_hand[0]}")
-    print(f"You have {player_hand} with a combined value of {player_value}")
-    print("1- Hit \n2- Stand" )
-    player_choice = input()
-    if player_choice == "1":
-        print("You chose to Hit")
-        player_draw_card()
-        dealer_draw_card()
+    if dealer_value >= 21 or player_value >= 21:
+        print(f"Dealer has {dealer_hand} with a combined value of {dealer_value}")
         print(f"You have {player_hand} with a combined value of {player_value}")
-        if dealer_value or player_value >= 21:
-            bjm.print_result(dealer_value,player_value)
-            playagain()
-            if playagain() == "n":
-                game = False
-    elif player_choice == "2":
-        print("You chose to Stand")
-        print(f"You had {player_hand} with a value of {player_value}")
-        print(f"Dealer had {dealer_hand} with a value of {dealer_value}")
         bjm.print_result(dealer_value,player_value)
-        playagain()
+        if playagain().lower() == "y":
+            continue
+        else:
+            break
+    elif dealer_value or player_value < 21:
+        print(f"Dealer has a {dealer_hand[0]}")
+        print(f"You have {player_hand} with a combined value of {player_value}")
+        print("1- Hit \n2- Stand" )
+        player_choice = input()
+        if player_choice == "1":
+            print("You chose to Hit")
+            player_draw_card()
+            dealer_draw_card()
+        elif player_choice == "2":
+            print("You chose to Stand")
+            print(f"You had {player_hand} with a value of {player_value}")
+            print(f"Dealer had {dealer_hand} with a value of {dealer_value}")
+            bjm.print_result(dealer_value,player_value)
+            if playagain() == "y":
+                continue
+            else:
+                break
