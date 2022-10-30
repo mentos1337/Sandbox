@@ -70,28 +70,29 @@ main{
 
 .artikkelkort h3{
     margin: 0.1rem;
-    font-size: 1rem;
+    font-size: 3vw;
 }
 
 .artikkelkort p{
-    font-size: 0.7rem;
+    font-size: 1.5vw;
     text-align: start;
     margin: 0 0.4rem 2rem 0.4rem;
 }
 
 .artikkelkort img{
-    height: 400px;
-    width: 100%;
+    margin-top: 0.5vw;
+    height: 24vw;
+    width: 97%;
 }
 
 .artikkelkort .cmslogo{
-    height: 200px;
+    height: 12vw;
     width: 40%;
 }
 
 article{
     box-shadow: 0px 6px 6px 4px rgba(0, 0, 0, 0.26);
-    width: 40%;
+    width: 55%;
     background-color: rgb(243, 242, 242);
 }
 
@@ -100,18 +101,31 @@ article{
     grid-template-columns: 0.5fr 1fr 1fr 1fr;
     padding: 0 3rem 0 3rem;
 }
-
+.TabellUU{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    padding: 0 3rem 0 3rem;
+}
 .Rad{
+    display: inline-block;
+    border: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-color: rgba(0, 0, 0, 0.514);
+}
+
+.RadTittel{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid;
-    border-right: solid;
+    border: solid;
+    border-width: 1px;
+    border-collapse: collapse;
     border-color: rgba(0, 0, 0, 0.514);
 }
 
 .Rad ul li{
-    font-size: 0.6rem;
+    font-size: 1.5vw;
     padding-bottom: 0.35rem;
 }
 
@@ -170,6 +184,6 @@ i{
         padding: 0 1.5rem 0 1.5rem;
     }
     .Rad ul li{
-        font-size: 0.7rem;
+        font-size: 3vw;
     }
 }
