@@ -39,55 +39,71 @@ def print_car_information(car):
     for key in car:
         print("{}: {}".format(key,car[key]))
 
-print_car_information(car_register["audiRS3"])
+
 
 def create_car(car_register, brand, model, price, year, month, new, km):
     car_register["{}{}".format(brand,model)] = {"brand":brand, "model":model,"price":price,"year":year,"month":month,"new":new,"km":km}
     return car_register
 
-create_car(car_register,"Tesla","X",30000,2022,2,True,0)
-print(car_register)
-"""
-#def get_car_age(car): 
-    # Oppgave 3.3 
- 
-#def next_eu_control(car): 
+
+    #Oppgave 3.3
+def get_car_age(car): 
+    today_year = date.today()
+    car_age = car["year"]
+    return today_year.year - car_age
+
+
+
     # Oppgave 3.4 
- 
-#def rent_car_monthly_price(car): 
+def next_eu_control(car): 
+    car_age = date(car["year"],1,1)
+    return car_age.replace(year = car_age.year + 2)
+
+
+
     # Oppgave 3.5 
- 
-#def calculate_total_price(car): 
+def rent_car_monthly_price(car): 
+    if car["new"] == True:
+        return round(car["price"] / 12 * 0.4 + 1000,2)
+    else:
+        return round(car["price"] / 12 * 0.4,2)
+
+
+
     # Oppgave 3.6 
+def calculate_total_price(car): 
+    if car["new"] == True:
+        return car["price"] + 10783
+    elif get_car_age(car) >= 0 and get_car_age(car) <= 3:
+        return car["price"] + 6681
+    elif get_car_age(car) >= 4 and get_car_age(car) <= 11:
+        return car["price"] + 4034
+    elif get_car_age(car) >= 12 and get_car_age(car) <= 29:
+        return car["price"] + 1729
+    else:
+        return car["price"]
+
+ 
+def is_new(car): 
+    return car['new'] 
+ 
+if __name__ == '__main__': 
+    create_car(car_register, "Volvo", "V90", 850_000, 2021, 12, True, 0) 
  
  
+toyota = car_register['toyotaBZ4X'] 
  
-#def is_new(car): 
-    #return car['new'] 
- 
-#if __name__ == '__main__': 
-#    create_car(car_register, "Volvo", "V90", 850_000, 2021, 12, True, 0) 
- 
- 
-""" #    toyota = car_register['toyotaBZ4X'] 
-"""  
-    print_car_information(toyota) 
- 
-    print(f"\nThe total price for this {toyota['brand']} {toyota['model']} is 
-           {calculate_total_price(toyota)}kr.") 
-    print(f"Next EU-control for the {toyota['brand']} {toyota['model']} is 
-           {next_eu_control(toyota)}") 
-    print(f"If you want to rent the {toyota['brand']} {toyota['model']} the 
-           monthly fee will be {rent_car_monthly_price(toyota)}.") 
- 
- 
-    audi = car_register['audiRS3'] 
- 
-    print_car_information(audi) 
- 
-    print(f"\nThe total price for this {audi['brand']} {audi['model']} is 
-            {calculate_total_price(audi)}kr.") 
-    print(f"Next EU-control for the {audi['brand']} {audi['model']} is 
-            {next_eu_control(audi)}") 
-    print(f"If you want to rent the {audi['brand']} {audi['model']} the monthly 
-            fee will be {rent_car_monthly_price(audi)}kr.")  """
+print_car_information(toyota) 
+
+print(f"\nThe total price for this {toyota['brand']} {toyota['model']} is {calculate_total_price(toyota)}kr.") 
+print(f"Next EU-control for the {toyota['brand']} {toyota['model']} is {next_eu_control(toyota)}") 
+print(f"If you want to rent the {toyota['brand']} {toyota['model']} the monthly fee will be {rent_car_monthly_price(toyota)}.") 
+print()
+print()
+audi = car_register['audiRS3'] 
+
+print_car_information(audi) 
+
+print(f"\nThe total price for this {audi['brand']} {audi['model']} is {calculate_total_price(audi)}kr.") 
+print(f"Next EU-control for the {audi['brand']} {audi['model']} is {next_eu_control(audi)}") 
+print(f"If you want to rent the {audi['brand']} {audi['model']} the monthly fee will be {rent_car_monthly_price(audi)}kr.")
