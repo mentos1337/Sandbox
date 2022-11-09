@@ -128,30 +128,15 @@ i {
   font-size: 2rem;
   padding-left: 1rem;
 }
-#active{
-
+#ham-icon{
+  display: none;
 }
-/*for å få det under til å funke så må du sette en klasse som du kaller "button" på <a> som ligger i artikklene*/
-.button {
-    display: inline-block;
-    padding: 0.5rem;
-    background-color: #d2dfe1;
-    text-decoration: none;
-    color: #000;
-  }
-
-  .button:hover {
-    background-color: #2f2f2f;
-    color: #fff;
-  }
-
-  .button:active {
-    display: inline-block;
-    padding: 0.5rem;
-    background-color: #a53f55;
-    text-decoration: none;
-    color: #fff;
-  }
+#main-menu{
+  display: block !important;
+  position: static;
+  background-color: transparent;
+  width: fit-content;
+} 
 @media only screen and (max-width: 800px) {
   body {
     grid-template-rows: 3rem 4rem auto auto;
@@ -187,6 +172,35 @@ i {
     flex-direction: column;
   }
   nav ul li a:hover {
-    background-color: none;
+    background-color: transparent;
   }
+  nav ul li{
+    display: block;
+  }
+  #ham-icon{
+    display: block;
+    position: fixed;
+    right: 72px;
+  }
+
+  #main-menu{
+    position: absolute;
+    top: 146px;
+    left:0;
+    background-color: #2f2f2f;
+    width: 100%;
+    padding: 1rem;
+}
+
+#main-menu li{
+    list-style: none;    
+}
+
+#main-menu a{
+    color: #fff;
+    padding: 0.5rem 0;
+    display: inline-block;
+    font-size: 1rem;
+
+}
 }

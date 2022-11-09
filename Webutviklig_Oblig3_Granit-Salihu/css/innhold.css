@@ -170,12 +170,7 @@ i{
 @media only screen and (max-width: 800px){
     article{
         width: 90%;
-    }
-
-    .nav-bar ul li a:hover{
-        background-color: none;
-    }
-    
+    }    
     .sosialmedia{
         flex-direction: column;
     }
@@ -185,5 +180,34 @@ i{
     }
     .Rad ul li{
         font-size: 3vw;
+    }
+    nav ul li a:hover {
+        background-color: transparent;
+      }
+      nav ul li{
+        display: block;
+      }
+      #ham-icon{
+        display: block;
+        position: fixed;
+        right: 72px;
+      }
+      #main-menu{
+        position: absolute;
+        top: 146px;
+        left:0;
+        background-color: #2f2f2f;
+        width: 100%;
+        padding: 1rem;
+    }  
+    #main-menu li{
+        list-style: none;    
+    }
+    #main-menu a{
+        color: #fff;
+        padding: 0.5rem 0;
+        display: inline-block;
+        font-size: 1rem;
+    
     }
 }
