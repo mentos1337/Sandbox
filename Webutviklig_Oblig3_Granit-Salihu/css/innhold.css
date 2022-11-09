@@ -167,6 +167,15 @@ i{
     padding-left: 1rem;
 }
 
+#ham-icon{
+    display: none;
+  }
+#main-menu{
+display: block !important;
+position: static;
+background-color: transparent;
+width: fit-content;
+} 
 @media only screen and (max-width: 800px){
     article{
         width: 90%;
@@ -174,7 +183,6 @@ i{
     .sosialmedia{
         flex-direction: column;
     }
-
     .Tabell{
         padding: 0 1.5rem 0 1.5rem;
     }
@@ -199,7 +207,7 @@ i{
         background-color: #2f2f2f;
         width: 100%;
         padding: 1rem;
-    }  
+    }
     #main-menu li{
         list-style: none;    
     }
@@ -208,6 +216,5 @@ i{
         padding: 0.5rem 0;
         display: inline-block;
         font-size: 1rem;
-    
     }
 }

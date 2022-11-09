@@ -128,9 +128,11 @@ i {
   font-size: 2rem;
   padding-left: 1rem;
 }
+
 #ham-icon{
   display: none;
 }
+
 #main-menu{
   display: block !important;
   position: static;
@@ -141,33 +143,23 @@ i {
   body {
     grid-template-rows: 3rem 4rem auto auto;
   }
-
-  .nav-bar ul li a:hover{
-    background-color: none;
-}
-
   .intro{
     background-color: white;
   }
-
   .introtekst {
     width: 70%;
   }
-
   .artikkelkort-kontainer {
     flex-wrap: wrap;
   }
-
   .artikkelkort-kontainer p{
     font-size: 0.7rem;
   }
-
   article {
     box-shadow: none;
     margin-bottom: 0.6rem;
     background-color: white;
   }
-  
   .sosialmedia {
     flex-direction: column;
   }
@@ -182,7 +174,6 @@ i {
     position: fixed;
     right: 72px;
   }
-
   #main-menu{
     position: absolute;
     top: 146px;
@@ -191,16 +182,13 @@ i {
     width: 100%;
     padding: 1rem;
 }
-
 #main-menu li{
     list-style: none;    
 }
-
 #main-menu a{
     color: #fff;
     padding: 0.5rem 0;
     display: inline-block;
     font-size: 1rem;
-
 }
 }
