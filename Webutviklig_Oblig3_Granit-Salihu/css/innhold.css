@@ -28,7 +28,7 @@ body {
     font-size: 1rem;
 }
 
-.nav-bar {
+nav{
     grid-area: nav;
     background-color: black;
     display: flex;
@@ -36,23 +36,23 @@ body {
     align-items: center;
 }
 
-.nav-bar ul {
+nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.nav-bar ul li{
+nav ul li{
     display: inline-block;
 }
 
-.nav-bar ul li a{
+nav ul li a{
     color: white;
     margin: 1rem;
     text-decoration: none;
 }
 
-.nav-bar ul li a:hover{
+nav ul li a:hover{
     background-color: rgb(71, 3, 71);
 }
 
@@ -202,7 +202,7 @@ width: fit-content;
       }
       #main-menu{
         position: absolute;
-        top: 146px;
+        top: 116px;
         left:0;
         background-color: #2f2f2f;
         width: 100%;
