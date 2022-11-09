@@ -19,7 +19,7 @@ header {
   grid-area: header;
   display: flex;
   justify-content: center;
-  background-image: url("./img/low-poly-abstract-background-free-vector.jpg"); /*kilde:https://www.vecteezy.com/vector-art/2088792-low-poly-abstract-background*/
+  background-image: url("../img/low-poly-abstract-background-free-vector.jpg"); /*kilde:https://www.vecteezy.com/vector-art/2088792-low-poly-abstract-background*/
   background-size: cover;
 }
 
@@ -128,7 +128,30 @@ i {
   font-size: 2rem;
   padding-left: 1rem;
 }
+#active{
 
+}
+/*for å få det under til å funke så må du sette en klasse som du kaller "button" på <a> som ligger i artikklene*/
+.button {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #d2dfe1;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .button:hover {
+    background-color: #2f2f2f;
+    color: #fff;
+  }
+
+  .button:active {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #a53f55;
+    text-decoration: none;
+    color: #fff;
+  }
 @media only screen and (max-width: 800px) {
   body {
     grid-template-rows: 3rem 4rem auto auto;
@@ -162,5 +185,8 @@ i {
   
   .sosialmedia {
     flex-direction: column;
+  }
+  nav ul li a:hover {
+    background-color: none;
   }
 }

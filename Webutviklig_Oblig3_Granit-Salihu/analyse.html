@@ -6,7 +6,7 @@
     <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="innhold.css">
+    <link rel="stylesheet" href="./css/innhold.css">
     <title>Analyse</title>
 </head>
 <body>
@@ -16,11 +16,10 @@
         </div>
     </header>
     <nav class="nav-bar">
-        <div class="logo">
-            <a href="index.html">
-                <i class="fa-solid fa-hippo"></i>
-            </a>
-        </div>
+        <a href="index.html">
+            <i class="fa-solid fa-hippo"></i>
+        </a>
+        <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
         <ul>
             <li><a href="index.html">Hjem</a></li>
             <li><a href="analyse.html">Analyse</a></li>
@@ -64,6 +63,7 @@
                 </p>
             </a>
         </div>
-    </footer>  
+    </footer>
+    <script src="javascript/ham.js"></script>  
 </body>
 </html>

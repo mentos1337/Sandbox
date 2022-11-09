@@ -19,7 +19,7 @@ body {
     grid-area: header;
     display: flex;
     justify-content: center;
-    background-image:url("./img/low-poly-abstract-background-free-vector.jpg");
+    background-image:url("../img/low-poly-abstract-background-free-vector.jpg");
     background-size: cover;
 }
 

@@ -52,7 +52,7 @@ def get_car_age(car):
     car_age = car["year"]
     return today_year.year - car_age
 
-
+print(get_car_age(car_register["toyotaBZ4X"]))
 
     # Oppgave 3.4 
 def next_eu_control(car): 
