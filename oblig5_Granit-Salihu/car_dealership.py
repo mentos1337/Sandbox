@@ -1,5 +1,27 @@
 from datetime import date 
- 
+class car_register:
+    def __init__(self,car,brand,model,price,year,month,new,km):
+        self.car = car
+        self.brand = brand
+        self.model = model
+        self.price = price
+        self.year = year
+        self.month = month
+        self.new = new
+        self.km = km
+        def print_car_information(self):
+            pass
+        def get_car_age(self):
+            "holder også å bruke print(car.age)"
+            pass
+        def rent_car_monthly_price(self):
+            pass
+        def next_eu_control(self):
+            pass
+        def calculate_total_price(self):
+            pass
+
+
 car_register = { 
     "toyotaBZ4X": { 
             "brand": "Toyota", 
@@ -28,7 +50,7 @@ car_register = {
             "new": True, 
             "km": 0 
     }, 
-} 
+}
  
 NEW_CAR_REGISTRATION_FEE = 8745 
 RENT_CAR_PERCENTAGE = 0.4 
