@@ -1,5 +1,5 @@
 from datetime import date 
-class car_register:
+class car_register1:
     def __init__(self,car,brand,model,price,year,month,new,km):
         self.car = car
         self.brand = brand
@@ -74,14 +74,15 @@ def get_car_age(car):
     car_age = car["year"]
     return today_year.year - car_age
 
-print(get_car_age(car_register["toyotaBZ4X"]))
+
 
     # Oppgave 3.4 
-def next_eu_control(car): 
-    car_age = date(car["year"],1,1)
-    return car_age.replace(year = car_age.year + 2)
-
-
+def next_eu_control(car):
+    dagens = date.today()
+    car_age = date(car["year"],car["month"],1)
+    while dagens >= car_age:
+        car_age = car_age.replace(year = car_age.year + 2)
+        return car_age
 
     # Oppgave 3.5 
 def rent_car_monthly_price(car): 
@@ -90,7 +91,7 @@ def rent_car_monthly_price(car):
     else:
         return round(car["price"] / 12 * 0.4,2)
 
-
+print("Monthly price: ",rent_car_monthly_price(car_register["toyotaBZ4X"]))
 
     # Oppgave 3.6 
 def calculate_total_price(car): 
