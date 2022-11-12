@@ -34,10 +34,11 @@ def calculate_average_ware_rating(ware_list):
     try:
         for snitt in ware_list.get("ratings"):
                 sum += snitt
-    except ZeroDivisionError:
+    except:
         if ware_list.get("ratings") == None:
-            print(ZeroDivisionError)
+            print("denne varen har ingen ratings")
     return(round(sum / len(ware_list["ratings"]),1))
+
 
 #oppgave3
 def get_all_wares_in_stock(ware):

@@ -12,7 +12,7 @@ class car_register1:
         def print_car_information(self):
             pass
         def get_car_age(self):
-            "holder også å bruke print(car.age)"
+            "holder også å bruke print(car_register1.age)"
             pass
         def rent_car_monthly_price(self):
             pass
@@ -28,7 +28,7 @@ car_register = {
             "model": "Corolla", 
             "price": 96_000, 
             "year": 2012, 
-            "month": 8, 
+            "month": 12, 
             "new": False, 
             "km": 163_000 
     }, 
@@ -64,7 +64,7 @@ def print_car_information(car):
 
 
 def create_car(car_register, brand, model, price, year, month, new, km):
-    car_register["{}{}".format(brand,model)] = {"brand":brand, "model":model,"price":price,"year":year,"month":month,"new":new,"km":km}
+    car_register[f"{brand}{model}"] = {"brand":brand, "model":model,"price":price,"year":year,"month":month,"new":new,"km":km}
     return car_register
 
 
@@ -81,9 +81,11 @@ def next_eu_control(car):
     dagens = date.today()
     car_age = date(car["year"],car["month"],1)
     while dagens >= car_age:
-        car_age = car_age.replace(year = car_age.year + 2)
-        return car_age
+        car_age = car_age.replace(car_age.year + 2)
+    return car_age
 
+
+print("Neste kontroll er :",next_eu_control(car_register["toyotaBZ4X"]))
     # Oppgave 3.5 
 def rent_car_monthly_price(car): 
     if car["new"] == True:
