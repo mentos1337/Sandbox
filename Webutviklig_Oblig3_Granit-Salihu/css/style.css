@@ -177,10 +177,8 @@ i {
   #main-menu{
     position: absolute;
     top: 146px;
-    left:0;
     background-color: #2f2f2f;
     width: 100%;
-    padding: 1rem;
 }
 #main-menu li{
     list-style: none;    
