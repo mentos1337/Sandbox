@@ -68,6 +68,7 @@ while True:
     player_value = 0
     dealer_value = 0
     player_coin = 5
+    #gamestart
     while player_coin > 0:
         print(f"You have {player_coin} Coins")
         bet_amount = int(input("How much would you like to bet? "))

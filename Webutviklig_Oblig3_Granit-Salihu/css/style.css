@@ -1,5 +1,4 @@
 html {
-  font-size: calc(1em + 1vw);
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -7,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: 3rem 2.5rem auto auto;
+  grid-template-rows: 3rem 4rem auto auto;
   grid-template-areas:
     "header"
     "nav"
@@ -43,17 +42,13 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
+  display: block;
 }
 
 nav ul li a {
   color: white;
   margin: 1rem;
   text-decoration: none;
-}
-
-nav ul li a:hover {
-  background-color: rgb(71, 3, 71);
 }
 
 main {
@@ -71,9 +66,9 @@ main {
 }
 
 .introtekst {
-  width: 50%;
   font-size: 0.8rem;
   text-align: center;
+  width: 70%;
 }
 
 .artikkelkort-kontainer {
@@ -82,6 +77,7 @@ main {
   justify-content: space-evenly;
   text-align: center;
   padding-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .artikkelkort-kontainer h5 {
@@ -89,7 +85,7 @@ main {
 }
 
 .artikkelkort-kontainer p {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   text-align: center;
   margin: 5%;
 }
@@ -106,15 +102,17 @@ main {
 }
 
 article {
-  box-shadow: 0px 6px 6px 4px rgba(0, 0, 0, 0.26);
+  box-shadow: none;
   width: 400px;
   background-color: rgb(243, 242, 242);
+  margin-bottom: 0.6rem;
 }
 
 .sosialmedia{
   grid-area: footer;
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
   background-color: rgb(20, 13, 1);
   margin-top: 1rem;
   text-align: center;
@@ -130,63 +128,65 @@ i {
 }
 
 #ham-icon{
-  display: none;
+  display: block;
+  position: absolute;
+  right: 72px;
 }
 
 #main-menu{
-  display: inline-block;
-  position: static;
-  background-color: transparent;
-} 
-@media only screen and (max-width: 800px) {
-  body {
-    grid-template-rows: 3rem 4rem auto auto;
-  }
-  .intro{
-    background-color: white;
-  }
-  .introtekst {
-    width: 70%;
-  }
-  .artikkelkort-kontainer {
-    flex-wrap: wrap;
-  }
-  .artikkelkort-kontainer p{
-    font-size: 0.7rem;
-  }
-  article {
-    box-shadow: none;
-    margin-bottom: 0.6rem;
-    background-color: white;
-  }
-  .sosialmedia {
-    flex-direction: column;
-  }
-  nav ul li a:hover {
-    background-color: initial;
-  }
-  nav ul li{
-    display: block;
-  }
-  #ham-icon{
-    display: block;
-    position: absolute;
-    right: 72px;
-  }
-  #main-menu{
-    position: absolute;
-    top: 146px;
-    background-color: #2f2f2f;
-    width: 100%;
-    min-width: 400px;
+  position: absolute;
+  top: 112px;
+  background-color: #2f2f2f;
+  width: 100%;
+  min-width: 400px;
 }
 #main-menu li{
-    list-style: none;    
+  list-style: none;    
 }
 #main-menu a{
-    color: #fff;
-    padding: 0.5rem 0;
+  color: #fff;
+  padding: 0.5rem 0;
+  display: inline-block;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 800px) {
+  .introtekst{
+    width: 50%;
+  }
+  body {
+    grid-template-rows: 3rem 2.5rem auto auto;
+  }
+  .artikkelkort-kontainer {
+    flex-wrap: initial;
+  }
+  .artikkelkort-kontainer p{
+    font-size: 0.5rem;
+  }
+  article {
+    box-shadow: 0px 6px 6px 4px rgba(0, 0, 0, 0.26);
+  }
+  .sosialmedia {
+    flex-direction: row;
+  }
+  nav{
+    display: flex;
+  }
+  nav ul li a:hover {
+    background-color: rgb(71, 3, 71);
+  }
+  nav ul li{
     display: inline-block;
-    font-size: 1rem;
+  }
+  #ham-icon{
+    display: none;
+  }
+  #main-menu{
+    display: flex !important;
+    justify-content: flex-end;
+    position: static;
+    background-color: transparent;
+  }
+  html{
+    font-size: calc(1em + 1vw);
 }
 }
