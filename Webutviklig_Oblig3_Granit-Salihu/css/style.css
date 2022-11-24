@@ -117,7 +117,6 @@ article {
   margin-top: 1rem;
   text-align: center;
 }
-
 i {
   color: white;
 }
@@ -129,19 +128,21 @@ i {
 
 #ham-icon{
   display: block;
-  position: absolute;
+  position: sticky;
   right: 72px;
 }
 
 #main-menu{
   position: absolute;
-  top: 112px;
+  top: 104px;
   background-color: #2f2f2f;
   width: 100%;
   min-width: 400px;
 }
 #main-menu li{
-  list-style: none;    
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 #main-menu a{
   color: #fff;
