@@ -126,6 +126,7 @@ article{
 .Rad ul li{
     font-size: 3vw;
     padding-bottom: 0.35rem;
+    list-style: none;
 }
 
 .googlemaps{
@@ -172,7 +173,7 @@ i{
     position: sticky;
     right: 72px;
   }
-  
+
 #share-icon{
     display: block;
     position: absolute;
