@@ -10,6 +10,10 @@
     <meta property="og:image"              content="https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000"/>
     <!--Twitter-->
     <meta name="twitter:card"              content="summary_large_image"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
@@ -24,7 +28,7 @@
     </header>
     <nav>
         <a href="index.html">
-            <i class="fa-solid fa-hippo"></i>
+            <img class="logo" src="./favicon/favicon.ico" alt="logo">
         </a>
         <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
         <ul id="main-menu" style="display:block">
@@ -38,14 +42,15 @@
     <main>
         <section class="kontaktskjema">
             <form action="" method="post">
-                <label for="name">Navn: </label>
-                <input type="text" name="name" id="name">
+                <label for="name" value="Fornavn">Navn: </label>
+                <input type="text" name="name" id="name" placeholder="Fornavn" autocomplete="given-name">
                 <label for="age">Alder: </label>
-                <input type="number" name="age" id="age">
+                <input type="number" name="age" id="age" placeholder="Alder i år">
                 <label for="e-mail">Mail: </label>
-                <input type="email" name="e-mail" id="e-mail">
+                <input type="email" name="e-mail" id="e-mail" placeholder="ole.nordman@hiof.no" autocomplete="email">
                 <label for="description">Beskrivelse: </label>
-                <textarea name="description"></textarea>
+                <textarea name="description" placeholder="Beskriv hva henvendelsen gjelder med noen få ord"></textarea>
+                Trykk på registrer for å fullføre registreringen
                 <button type="submit">Registrer</button>
             </form>
         </section>

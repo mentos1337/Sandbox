@@ -164,7 +164,7 @@ i{
     color: white;
 }
 
-.fa-solid.fa-hippo{
+.logo{
     font-size: 2rem;
     padding-left: 1rem;
 }
@@ -223,6 +223,14 @@ i{
     display: flex;
     justify-content: center;
   }
+  .snarvei {
+    position: absolute;
+    left: -2000px;
+    top: 0px;
+    }
+    .snarvei:focus {
+    left: 0px;
+    }
 @media only screen and (max-width: 500px){
     .TabellUU{
         padding:unset;

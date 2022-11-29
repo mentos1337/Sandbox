@@ -6,6 +6,10 @@
     <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!--Facebook, pinterest & twitter-->
     <meta property="og:url"                content="https://itstud.hiof.no/~granits/webserver/"/>
     <meta property="og:type"               content="article"/>
@@ -21,9 +25,10 @@
     <header>
         <p>Webutvikling eksamen del 2</p>
     </header>
+    <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>
     <nav>
         <a href="index.html">
-            <i class="fa-solid fa-hippo"></i>
+            <img class="logo" src="./favicon/favicon.ico" alt="logo">
         </a>
         <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
         <ul id="main-menu" style="display: block;">
@@ -39,6 +44,7 @@
             <h2>Velkommen til eksamenside</h2>
             <div class="introtekst">
                 <p>
+
                     Dette er en intro tekst til eksamensoppgaven under 
                     vil du finne innledning til hovedinnholdet som er delt inn i tre artikkelkort
                 </p>
@@ -47,50 +53,53 @@
                 <p>Kontakt oss</p>
             </a>
         </div>
-        <div class="artikkelkort-kontainer">
-            <article>
-                <a href="analyse.html">
-                    <img src="./img/business-professionals-group-young-confident-260nw-1068519821.jpg" alt="placeholder bilde"> <!--Kilde:https://www.shutterstock.com/nb/image-photo/business-professionals-group-young-confident-people-1068519821-->
-                </a>
-                <h5>Analyse</h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Tempore, ipsa perferendis! Illo adipisci eum nostrum, vero 
-                    corrupti inventore dignissimos a?
-                </p>
-                <div class="les-mer">
+        <section id="hovedinnhold" tabindex="-1">
+            <div class="artikkelkort-kontainer">
+                <article>
                     <a href="analyse.html">
-                        <p>Les mer</p>
+                        <img src="./img/business-professionals-group-young-confident-260nw-1068519821.jpg" alt="placeholder bilde"> <!--Kilde:https://www.shutterstock.com/nb/image-photo/business-professionals-group-young-confident-people-1068519821-->
                     </a>
-                </div>
-            </article>
-            <article>
-                <a href="uuvsseo.html">
-                    <img src="./img/architect-team-having-discussion-260nw-1380294050.jpg" alt="placeholder bilde"> <!--Kilde:https://www.shutterstock.com/nb/image-photo/architect-team-having-discussion-1380294050-->
-                </a>
-                <h5>UU vs SEO</h5>
-                <p>
-                    UU vs SEO eller bedre sagt UU og SEO fordi temane omhandler hverandre, 
-                    og oftest vil du finne løsninger som styrker universellutforming 
-                    og søkemotor optimalisering.
-                </p>
-                <div class="les-mer">
+                    <h5>Analyse</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Tempore, ipsa perferendis! Illo adipisci eum nostrum, vero 
+                        corrupti inventore dignissimos a?
+                    </p>
+                    <div class="les-mer">
+                        <a href="analyse.html">
+                            <p>Les mer</p>
+                        </a>
+                    </div>
+                </article>
+                <article>
                     <a href="uuvsseo.html">
-                        <p>Les mer</p>
+                        <img src="./img/architect-team-having-discussion-260nw-1380294050.jpg" alt="placeholder bilde"> <!--Kilde:https://www.shutterstock.com/nb/image-photo/architect-team-having-discussion-1380294050-->
                     </a>
-                </div>
-            </article>
-            <article>
-                <a href="cms.html"><img src="./img/happy-group-businesspeople-during-presentation-260nw-755621713.png" alt="Bildet illustrerer CMS"></a> <!--Kilde:https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000-->
-                <h5>CMS</h5>
-                <p>Content management system, er et verktøy som hjelper brukere 
-                    å skape og opprettholde innhold. Den kan eleminere behovet for 
-                    programmerings kunnskap hos brukeren, og mer. </p>
-                <div class="les-mer">
-                    <a href="cms.html"><p>Les mer</p></a>
-                </div>
-            </article>
-        </div>
+                    <h5>UU vs SEO</h5>
+                    <p>
+                        UU vs SEO eller bedre sagt UU og SEO fordi temane omhandler hverandre, 
+                        og oftest vil du finne løsninger som styrker universellutforming 
+                        og søkemotor optimalisering.
+                    </p>
+                    <div class="les-mer">
+                        <a href="uuvsseo.html">
+                            <p>Les mer</p>
+                        </a>
+                    </div>
+                </article>
+                <article>
+                    <a href="cms.html"><img src="./img/happy-group-businesspeople-during-presentation-260nw-755621713.png" alt="Bildet illustrerer CMS"></a> <!--Kilde:https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000-->
+                    <h5>CMS</h5>
+                    <p>Content management system, er et verktøy som hjelper brukere 
+                        å skape og opprettholde innhold. Den kan eleminere behovet for 
+                        programmerings kunnskap hos brukeren, og mer. </p>
+                    <div class="les-mer">
+                        <a href="cms.html"><p>Les mer</p></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
     </main>
     <footer>
         <div class="sosialmedia">

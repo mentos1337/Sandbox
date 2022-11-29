@@ -121,7 +121,7 @@ i {
   color: white;
 }
 
-.fa-solid.fa-hippo {
+.logo {
   font-size: 2rem;
   padding-left: 1rem;
 }
@@ -150,6 +150,14 @@ i {
   display: inline-block;
   font-size: 1rem;
 }
+.snarvei {
+  position: absolute;
+  left: -2000px;
+  top: 0px;
+  }
+  .snarvei:focus {
+  left: 0px;
+  }
 @media only screen and (min-width: 800px) {
   .introtekst{
     width: 50%;
