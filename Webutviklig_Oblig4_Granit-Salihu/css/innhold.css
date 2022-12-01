@@ -117,7 +117,15 @@ article{
     padding: 0 0 0 0.5rem;
     font-size: 2.5vw;
 }
-
+.rad{
+    display: flex;
+    border: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-color: rgba(0, 0, 0, 0.514);
+    font-size: 2.5vw;
+    justify-content: center;
+}
 .RadTittel{
     display: flex;
     justify-content: center;
@@ -378,5 +386,16 @@ footer i{
     #googlemapsbeholder{
         width: 50%;
         height: 100%;
+    }
+    .analyse{
+        display: grid;
+        grid-template-areas: "analyse" "share";
+    }
+    .analyse-grid{
+        grid-area: analyse;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+        place-self: center;
     }
 }
