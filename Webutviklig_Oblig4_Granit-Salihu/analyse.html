@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="description" content="Patchnotes for websidens endringer">
     <!--Facebook, pinterest & twitter-->
     <meta property="og:url"                content="https://itstud.hiof.no/~granits/webserver/"/>
     <meta property="og:type"               content="article"/>
@@ -23,13 +24,12 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <p>Webutvikling eksamen del 2</p>
-        </div>
+        <h3>Webutvikling eksamen del 2</h3>
     </header>
+    <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>
     <nav>
         <a href="index.html">
-            <img class="logo" src="./favicon/favicon.ico" alt="logo">
+            <img class="logo" src="./favicon/favicon.ico" alt="Hjem knapp og logo">
         </a>
         <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
         <ul id="main-menu" style="display:none">
@@ -43,10 +43,13 @@
     <main class="analyse">
         <section class="analyse-grid">
             <div class="RadTittel">
-                <h3>Før</h3>
+                <h2>Før</h2>
             </div>
             <div class="RadTittel">
-                <h3>Etter</h3>
+                <h2>Etter</h2>
+            </div>
+            <div class="RadTittel">
+                <h2>Kommentar</h2>
             </div>
             <div class="rad">
                 <img src="/analysebilder/før-cmsvsseo.PNG" alt="CMSvsSEO var for stor til å være komfortabel å lese">
@@ -55,10 +58,20 @@
                 <img src="/analysebilder/etter-cmsvsseo.PNG" alt="CMSvsSEO har blitt redesegnet til å være enklere å lese">
             </div>
             <div class="rad">
+                <p>
+                    Endret oppsettet av de forskjellige artikklene til å være enklere å lese
+                </p>
+            </div>
+            <div class="rad">
                 <img src="/analysebilder/før-nav.PNG" alt="Navigasjonselementer overflyter">
             </div>
             <div class="rad">
                 <img src="/analysebilder/etter-nav.PNG" alt="Navigasjonselementer erstattet av hamburger meny">
+            </div>
+            <div class="rad">
+                <p>
+                    Satt inn hamburger meny for å gjøre det enklere å navigere på mindre skjermer
+                </p>
             </div>
             <div class="rad">
                 <img src="/analysebilder/før-cms.PNG" alt="Navigasjonselementer overflyter">
@@ -66,11 +79,68 @@
             <div class="rad">
                 <img src="/analysebilder/etter-cms.PNG" alt="Navigasjonselementer erstattet av hamburger meny">
             </div>
+            <div class="rad">
+                <p>
+                    Endret oppsettet av de forskjellige artikklene til å være enklere å lese
+                </p>
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/før-hover.PNG" alt="On hover var bakground purple">
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/etter-hover.PNG" alt="On hover blitt 120% scaling isteden">
+            </div>
+            <div class="rad">
+                <p>
+                    Endret hover effekten fra å bytte farge til å bli større
+                </p>
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/før-klikkbare-lenker.JPG" alt="Klikkbare lenker hadde ikke knapp lignende stil">
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/etter-klikkbare-lenker.JPG" alt="Klikkbare lenker har fått border for å være mer gjenkjennelige">
+            </div>
+            <div class="rad">
+                <p>
+                    Gjort klikkbare lenker mer gjenkjennelige
+                </p>
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/før-autofyll.JPG" alt="Støttet ikke autofyll">
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/etter-autofyll.JPG" alt="Lagt til autofyll">
+            </div>
+            <div class="rad">
+                <p>
+                    Gjort klikkbare lenker mer gjenkjennelige
+                </p>
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/før-alt-tekst.JPG" alt="Ikke beskrivende alt tekst">
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/etter-alt-tekst.JPG" alt="Beskrivende alt tekst">
+            </div>
+            <div class="rad">
+                <p>
+                    Lagt til alt tekst som beskriver bildet
+                </p>
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/før-hoppover.JPG" alt="Ingen hopp over knapp">
+            </div>
+            <div class="rad">
+                <img src="/analysebilder/etter-hoppover.JPG" alt="Dedikert hopp over knapp">
+            </div>
+            <div class="rad">
+                <p>
+                    Lagt til mulighet for å hoppe til hovedinnhold
+                </p>
+            </div>
         </section>
-        <section class="share-container">
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" target="_blank" data-show-count="false">Tweet</a>
-            <a data-href="https://itstud.hiof.no/~granits/webserver/analyse.html" class="fb-share-button" data-layout="button" target="_blank"></a>
-        </section>
+        <div class="tilgjenglighet"><a href="Tilgjenglighetserklering.xlsx" target="_blank">Trykk her for tilgjengelighetserklæring</a></div>
     </main>
     <footer class="sosialmedia">
         <a href="https://www.instagram.com/granitxhaka/" target="_blank">
@@ -90,17 +160,5 @@
         </a>
     </footer>
     <script src="ham.js"></script>
-    <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId            : 'your-app-id',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v15.0'
-          });
-        };
-      </script>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>

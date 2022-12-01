@@ -23,7 +23,7 @@ header {
   background-size: cover;
 }
 
-header p {
+header h3 {
   color: white;
   font-size: 1rem;
   text-shadow: 1px 4px 3px black;
@@ -73,6 +73,7 @@ main {
   font-size: 2vw;
   text-align: center;
   width: 70%;
+  line-height: 1.5;
 }
 
 .artikkelkort-kontainer {
@@ -93,20 +94,29 @@ main {
   font-size: 2vw;
   text-align: center;
   margin: 5%;
+  line-height: 1.5;
 }
 
 .les-mer p {
-  text-align: center;
+  color: rgb(218, 218, 29);
   font-size: 3.2vw;
   padding-bottom: 0.2rem;
+  background: #2f2f2f;
+  border-radius: 30px;
 }
-
+.les-mer{
+  width: 30%;
+}
 .artikkelkort-kontainer img {
   height: 60%;
   width: 97%;
 }
 
 article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: none;
   width: 90%;
   background-color: rgb(243, 242, 242);
@@ -164,6 +174,13 @@ i {
   align-items: flex-end;
   gap: 2rem;
 }
+.introtekst-kontakt{
+  padding: 0 0.5rem 0 0.5rem;
+  background-color:#2f2f2f;
+  color: rgb(218, 218, 29);
+  border-radius: 30px;
+  margin-bottom: 0.5rem;
+}
 @media only screen and (max-width: 500px) {
   .introtekst {
     font-size: 3.5vw;
@@ -199,9 +216,10 @@ i {
     background-color: black;
     color: yellow;
   }
-    .snarvei:focus {
-    left: 0px;
-  }
+  .snarvei:focus {
+    top: 20px;
+    left: 90px;
+}
   .introtekst{
     width: 40%;
     font-size: 1.1vw;
@@ -230,6 +248,12 @@ i {
   .les-mer p{
     font-size: 1.2vw;
   }
+  .les-mer p:hover{
+    transform: scale(1.2);
+  }
+  .les-mer p:focus{
+    transform: scale(1.2);
+  }
   article {
     box-shadow: 0px 6px 10px 4px rgb(0 0 0 / 26%);
     width: 22%;
@@ -240,8 +264,11 @@ i {
   nav{
     display: flex;
   }
-  nav ul li a:hover {
-    transform: scale(1.2);
+  a:hover {
+    transform: scale(1.4);
+  }
+  a:focus{
+    transform: scale(1.4);
   }
   nav ul li{
     display: inline-block;

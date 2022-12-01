@@ -14,7 +14,7 @@ body {
         "footer";
 }
 
-.header{
+header{
     grid-area: header;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
     background-size: cover;
 }
 
-.header p{
+header h3{
     color: white;
     text-shadow: 1px 4px 3px black;
     font-size: 1rem;
@@ -67,6 +67,7 @@ main{
     padding: 1rem 0 1rem 0;
     gap: 1rem;
     flex-wrap: wrap;
+    line-height: 1.5;
 }
 
 .artikkelkort h2{
@@ -116,6 +117,7 @@ article{
     border-color: rgba(0, 0, 0, 0.514);
     padding: 0 0 0 0.5rem;
     font-size: 2.5vw;
+    line-height: 1.5;
 }
 .rad{
     display: flex;
@@ -123,10 +125,16 @@ article{
     border-width: 1px;
     border-collapse: collapse;
     border-color: rgba(0, 0, 0, 0.514);
-    font-size: 2.5vw;
     justify-content: center;
+    font-size: 1vw;
+    align-items: center;
+    line-height: 1.5;
+}
+.rad th{
+    font-size: 2.5vw;
 }
 .rad img{
+    height: 80%;
     width: 60%;
 }
 .RadTittel{
@@ -163,7 +171,7 @@ article{
     margin: 0;
 }
 #googlemapsbeholder{
-    width: 97%;
+    width: 70%;
     height: 100%;
 }
 
@@ -254,6 +262,14 @@ footer i{
   .snarvei{
     display: none;
   }
+  h1{
+    font-size: 4vw;
+  }
+  .tilgjenglighet{
+    display: flex;
+    justify-content: center;
+
+  }
 @media only screen and (max-width: 500px){
     .TabellUU{
         padding:unset;
@@ -276,7 +292,9 @@ footer i{
     .Rad{
         font-size: 3.5vw;
     }
-    
+    h1{
+        font-size: 5vw;
+      }
     .RadTittel{
         font-size: 4vw;
     }
@@ -284,6 +302,15 @@ footer i{
         gap: 1rem;
         margin-top: 1rem;
       }
+    .kontakt-muligheter{
+        font-size: 4vw;
+    }
+    #googlemapsbeholder{
+        width: 100%;
+    }
+    .googlemaps{
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 800px){
     .snarvei {
@@ -295,8 +322,17 @@ footer i{
         color: yellow;
     }
     .snarvei:focus {
-        left: 0px;
+        top: 20px;
+        left: 90px;
     }
+    #hovedinnhold{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-size: 2vw;
+      }
     .Tabell{
         padding-top: 1rem;
         width: 50%;
@@ -320,12 +356,12 @@ footer i{
     }
     .UU{
         display: grid;
-        grid-template-rows: 0.1fr 1fr 0.5fr auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: "tittel" "artikkel" "tabell" "share";
     }
     .CMS{
         display: grid;
-        grid-template-rows: 0.1 1fr 0.5fr auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: "tittel" "artikkel" "tabell" "share";
     }
     article {
@@ -359,8 +395,11 @@ footer i{
     .sosialmedia{
         flex-direction: row;
     }
-    nav ul li a:hover {
-        transform: scale(1.2);
+    a:hover {
+        transform: scale(1.4);
+    }
+    a:focus {
+        transform: scale(1.4);
     }
     nav ul li{
     display: inline-block;
@@ -397,8 +436,9 @@ footer i{
     .analyse-grid{
         grid-area: analyse;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 0.2fr;
         width: 50%;
         place-self: center;
+        margin-top: 1rem;
     }
 }

@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="description" content="Hoved side, inneholder kort introduksjon til Analyse, uu vs seo og cms artikklene">
     <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
@@ -23,14 +24,14 @@
 </head>
 <body>
     <header>
-        <p>Webutvikling eksamen del 2</p>
+        <h3>Webutvikling eksamen del 2</h3>
     </header>
     <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>
     <nav>
         <a href="index.html">
-            <img class="logo" src="./favicon/favicon.ico" alt="logo">
+            <img class="logo" src="./favicon/favicon.ico" alt="Hjem knapp og logo">
         </a>
-        <a href="javascript:void(0)" id="ham-icon" alt="Hamburger meny" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
+        <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
         <ul id="main-menu" style="display: none;">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="analyse.html">Analyse</a></li>
@@ -44,7 +45,6 @@
             <h1>Velkommen til eksamenside</h1>
             <div class="introtekst">
                 <p>
-
                     Dette er en intro tekst til eksamensoppgaven under 
                     vil du finne innledning til hovedinnholdet som er delt inn i tre artikkelkort
                 </p>
@@ -56,52 +56,44 @@
         <section id="hovedinnhold" tabindex="-1">
             <section class="artikkelkort-kontainer">
                 <article>
-                    <a href="analyse.html">
-                        <img src="./img/business-professionals-group-young-confident-260nw-1068519821.jpg" alt=""> <!--Kilde:https://www.shutterstock.com/nb/image-photo/business-professionals-group-young-confident-people-1068519821-->
-                    </a>
+                    <img src="./img/business-professionals-group-young-confident-260nw-1068519821.jpg" alt=""> <!--Kilde:https://www.shutterstock.com/nb/image-photo/business-professionals-group-young-confident-people-1068519821-->
                     <h2>Analyse</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Tempore, ipsa perferendis! Illo adipisci eum nostrum, vero 
                         corrupti inventore dignissimos a?
                     </p>
-                    <div class="les-mer">
-                        <a href="analyse.html">
-                            <p>Les mer</p>
-                        </a>
-                    </div>
+                    <a class="les-mer" href="analyse.html">
+                        <p>Les mer</p>
+                    </a>
                 </article>
                 <article>
-                    <a href="uuvsseo.html">
-                        <img src="./img/architect-team-having-discussion-260nw-1380294050.jpg" alt=""> <!--Kilde:https://www.shutterstock.com/nb/image-photo/architect-team-having-discussion-1380294050-->
-                    </a>
+                    <img src="./img/architect-team-having-discussion-260nw-1380294050.jpg" alt=""> <!--Kilde:https://www.shutterstock.com/nb/image-photo/architect-team-having-discussion-1380294050-->
                     <h2>UU vs SEO</h2>
                     <p>
                         UU vs SEO eller bedre sagt UU og SEO fordi temane omhandler hverandre, 
                         og oftest vil du finne løsninger som styrker universellutforming 
                         og søkemotor optimalisering.
                     </p>
-                    <div class="les-mer">
-                        <a href="uuvsseo.html">
-                            <p>Les mer</p>
-                        </a>
-                    </div>
+                    <a class="les-mer" href="uuvsseo.html">
+                        <p>Les mer</p>
+                    </a>
                 </article>
                 <article>
-                    <a href="cms.html"><img src="./img/happy-group-businesspeople-during-presentation-260nw-755621713.png" alt=""></a> <!--Kilde:https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000-->
+                    <img src="./img/happy-group-businesspeople-during-presentation-260nw-755621713.jpg" alt=""> <!--Kilde:https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000-->
                     <h2>CMS</h2>
                     <p>Content management system, er et verktøy som hjelper brukere 
                         å skape og opprettholde innhold. Den kan eleminere behovet for 
                         programmerings kunnskap hos brukeren, og mer. </p>
-                    <div class="les-mer">
-                        <a href="cms.html"><p>Les mer</p></a>
-                    </div>
+                    <a class="les-mer" href="cms.html">
+                        <p>Les mer</p>
+                    </a>
                 </article>
             </section>
         </section>
         <section class="share-container">
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" target="_blank" data-show-count="false">Tweet</a>
-            <a data-href="https://itstud.hiof.no/~granits/webserver/" class="fb-share-button" data-layout="button" target="_blank"></a>
+            <a href="https://itstud.hiof.no/~granits/webserver/index.html" class="fb-share-button" data-layout="button" target="_blank"></a>
         </section>
     </main>
     <footer class="sosialmedia">
@@ -133,7 +125,7 @@
         };
       </script>
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <script async src="https://platform.twitter.com/widgets.js"></script>
 </body>
 </html>
 
