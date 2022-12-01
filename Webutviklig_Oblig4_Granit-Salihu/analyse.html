@@ -11,9 +11,10 @@
     <meta property="og:image"              content="https://www.shutterstock.com/nb/image-photo/business-professionals-group-young-confident-people-1068519821"/>
     <!--Twitter-->
     <meta name="twitter:card"              content="summary_large_image"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
     <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
@@ -31,7 +32,7 @@
             <img class="logo" src="./favicon/favicon.ico" alt="logo">
         </a>
         <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
-        <ul id="main-menu" style="display:block">
+        <ul id="main-menu" style="display:none">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="analyse.html">Analyse</a></li>
             <li><a href="uuvsseo.html">UU vs SEO</a></li>
@@ -40,7 +41,7 @@
         </ul>
     </nav>
     <main>
-        <div class="artikkelkort">
+        <section class="artikkelkort">
             <article>
                 <a href="analyse.html">
                     <img src="./img/business-professionals-group-young-confident-260nw-1068519821.jpg" alt="">
@@ -54,27 +55,41 @@
                     Ad odit quam iste autem unde provident? Qui, optio.
                 </p>
             </article>
-        </div>
+        </section>
+        <section class="share-container">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" target="_blank" data-show-count="false">Tweet</a>
+            <a data-href="https://itstud.hiof.no/~granits/webserver/analyse.html" class="fb-share-button" data-layout="button" target="_blank"></a>
+        </section>
     </main>
-    <footer>
-        <div class="sosialmedia">
-            <a href="https://www.instagram.com/granitxhaka/" target="_blank">
-                <p>
-                    <i class="fa-brands fa-instagram"> Granit.s<br>Instagram</i>
-                </p>
-            </a>
-            <a href="https://www.facebook.com/granits.95/" target="_blank">
-                <p>
-                    <i class="fa-brands fa-facebook"> Granits.95<br>Facebook</i>
-                </p>
-            </a>
-            <a href="https://discord.com/users/212684280260722698" target="_blank">
-                <p>
-                    <i class="fa-brands fa-discord"> Lazy#6316<br>Discord</i>
-                </p>
-            </a>
-        </div>
+    <footer class="sosialmedia">
+        <a href="https://www.instagram.com/granitxhaka/" target="_blank">
+            <p>
+                <i class="fa-brands fa-instagram"> Granit.s<br>Instagram</i>
+            </p>
+        </a>
+        <a href="https://www.facebook.com/granits.95/" target="_blank">
+            <p>
+                <i class="fa-brands fa-facebook"> Granits.95<br>Facebook</i>
+            </p>
+        </a>
+        <a href="https://discord.com/users/212684280260722698" target="_blank">
+            <p>
+                <i class="fa-brands fa-discord"> Lazy#6316<br>Discord</i>
+            </p>
+        </a>
     </footer>
-    <script src="ham.js"></script>  
+    <script src="ham.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : 'your-app-id',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v15.0'
+          });
+        };
+      </script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>

@@ -6,10 +6,10 @@
     <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
     <!--Facebook, pinterest & twitter-->
     <meta property="og:url"                content="https://itstud.hiof.no/~granits/webserver/"/>
     <meta property="og:type"               content="article"/>
@@ -30,8 +30,8 @@
         <a href="index.html">
             <img class="logo" src="./favicon/favicon.ico" alt="logo">
         </a>
-        <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
-        <ul id="main-menu" style="display: block;">
+        <a href="javascript:void(0)" id="ham-icon" alt="Hamburger meny" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
+        <ul id="main-menu" style="display: none;">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="analyse.html">Analyse</a></li>
             <li><a href="uuvsseo.html">UU vs SEO</a></li>
@@ -40,8 +40,8 @@
         </ul>
     </nav>
     <main>
-        <div class="intro">
-            <h2>Velkommen til eksamenside</h2>
+        <section class="intro">
+            <h1>Velkommen til eksamenside</h1>
             <div class="introtekst">
                 <p>
 
@@ -49,17 +49,17 @@
                     vil du finne innledning til hovedinnholdet som er delt inn i tre artikkelkort
                 </p>
             </div>
-            <a href="kontaktoss.html">
+            <a class="introtekst-kontakt" href="kontaktoss.html">
                 <p>Kontakt oss</p>
             </a>
-        </div>
+        </section>
         <section id="hovedinnhold" tabindex="-1">
-            <div class="artikkelkort-kontainer">
+            <section class="artikkelkort-kontainer">
                 <article>
                     <a href="analyse.html">
-                        <img src="./img/business-professionals-group-young-confident-260nw-1068519821.jpg" alt="placeholder bilde"> <!--Kilde:https://www.shutterstock.com/nb/image-photo/business-professionals-group-young-confident-people-1068519821-->
+                        <img src="./img/business-professionals-group-young-confident-260nw-1068519821.jpg" alt=""> <!--Kilde:https://www.shutterstock.com/nb/image-photo/business-professionals-group-young-confident-people-1068519821-->
                     </a>
-                    <h5>Analyse</h5>
+                    <h2>Analyse</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Tempore, ipsa perferendis! Illo adipisci eum nostrum, vero 
@@ -73,9 +73,9 @@
                 </article>
                 <article>
                     <a href="uuvsseo.html">
-                        <img src="./img/architect-team-having-discussion-260nw-1380294050.jpg" alt="placeholder bilde"> <!--Kilde:https://www.shutterstock.com/nb/image-photo/architect-team-having-discussion-1380294050-->
+                        <img src="./img/architect-team-having-discussion-260nw-1380294050.jpg" alt=""> <!--Kilde:https://www.shutterstock.com/nb/image-photo/architect-team-having-discussion-1380294050-->
                     </a>
-                    <h5>UU vs SEO</h5>
+                    <h2>UU vs SEO</h2>
                     <p>
                         UU vs SEO eller bedre sagt UU og SEO fordi temane omhandler hverandre, 
                         og oftest vil du finne løsninger som styrker universellutforming 
@@ -88,8 +88,8 @@
                     </div>
                 </article>
                 <article>
-                    <a href="cms.html"><img src="./img/happy-group-businesspeople-during-presentation-260nw-755621713.png" alt="Bildet illustrerer CMS"></a> <!--Kilde:https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000-->
-                    <h5>CMS</h5>
+                    <a href="cms.html"><img src="./img/happy-group-businesspeople-during-presentation-260nw-755621713.png" alt=""></a> <!--Kilde:https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000-->
+                    <h2>CMS</h2>
                     <p>Content management system, er et verktøy som hjelper brukere 
                         å skape og opprettholde innhold. Den kan eleminere behovet for 
                         programmerings kunnskap hos brukeren, og mer. </p>
@@ -97,30 +97,43 @@
                         <a href="cms.html"><p>Les mer</p></a>
                     </div>
                 </article>
-            </div>
+            </section>
         </section>
-        
+        <section class="share-container">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" target="_blank" data-show-count="false">Tweet</a>
+            <a data-href="https://itstud.hiof.no/~granits/webserver/" class="fb-share-button" data-layout="button" target="_blank"></a>
+        </section>
     </main>
-    <footer>
-        <div class="sosialmedia">
-            <a href="https://www.instagram.com/granitxhaka/" target="_blank">
-                <p>
-                    <i class="fa-brands fa-instagram"> Granit.s<br>Instagram</i>
-                </p>
-            </a>
-            <a href="https://www.facebook.com/granits.95/" target="_blank">
-                <p>
-                    <i class="fa-brands fa-facebook"> Granits.95<br>Facebook</i>
-                </p>
-            </a>
-            <a href="https://discord.com/users/212684280260722698" target="_blank">
-                <p>
-                    <i class="fa-brands fa-discord"> Lazy#6316<br>Discord</i>
-                </p>
-            </a>
-        </div>
+    <footer class="sosialmedia">
+        <a href="https://www.instagram.com/granitxhaka/" target="_blank">
+            <p>
+                <i class="fa-brands fa-instagram"> Granit.s<br>Instagram</i>
+            </p>
+        </a>
+        <a href="https://www.facebook.com/granits.95/" target="_blank">
+            <p>
+                <i class="fa-brands fa-facebook"> Granits.95<br>Facebook</i>
+            </p>
+        </a>
+        <a href="https://discord.com/users/212684280260722698" target="_blank">
+            <p>
+                <i class="fa-brands fa-discord"> Lazy#6316<br>Discord</i>
+            </p>
+        </a>
     </footer>
     <script src="ham.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : 'your-app-id',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v15.0'
+          });
+        };
+      </script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
 

@@ -11,10 +11,10 @@
     <meta property="og:image"              content="https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000"/>
     <!--Twitter-->
     <meta name="twitter:card"              content="summary_large_image"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
     <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
@@ -32,7 +32,7 @@
             <img class="logo" src="./favicon/favicon.ico" alt="logo">
         </a>
         <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
-        <ul id="main-menu" style="display:block">
+        <ul id="main-menu" style="display:none">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="analyse.html">Analyse</a></li>
             <li><a href="uuvsseo.html">UU vs SEO</a></li>
@@ -40,40 +40,50 @@
             <li><a href="kontaktoss.html">Kontakt oss</a></li>
         </ul>
     </nav>
-    <main>
-        <div class="artikkelkort">
+    <main class="CMS">
+        <div class="tittel">
+            <h1>Content management system</h1>
+        </div>
+        <section class="artikkelkort">
             <article>
-                <a href="cms.html">
-                    <img src="./img/flat-design-cms-illustration_52683-54731.png" alt=""> <!--Kilde:https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000-->
-                </a>
-                <h3>CMS</h3>
+                <img src="./img/flat-design-cms-illustration_52683-54731.png" alt=""> <!--Kilde:https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000-->
+                <h2>CMS</h2>
                 <p>Seamless CMS er en tradisjonell content management system. Den kombinerer presentasjon av innhold og innholdet til et system. 
                     Det gjør det enkelt å opprettholde, og publisere nytt innhold uten behov for programmeringskunnskap. 
                     Ulempen med seamless cms er at innholdet blir låst til en plattform, og er derfor ikke gjenbrukbar skulle du ønske å dele innholdet 
                     til andre plattformer enn web. Det er også vanskelig å bytte verktøyene som brukes til å forme innholdet.</p>
                     <!--Kilde: https://www.udig.com/digging-in/traditional-cms-vs-headless-cms/ og powerpoint fra forelesninger-->
-                <h3>Headless CMS</h3>
-                <p>CMS, er en ny type content management system. I motsetning til seamless, så blir backend og frontend 
+            </article>
+            <article>
+                <img src="./img/headless-cms-1_e5ymea.jpg" alt=""> <!--Kilde:https://www.cmscritic.com/wp-content/themes/cmscritic/img/cloudinary/headless-cms-1_e5ymea.png-->
+                <h2>Headless CMS</h2>
+                <p>Headless CMS, er en ny type content management system. I motsetning til seamless, så blir backend og frontend 
                     to forskjellige systemer. Headless cms har i oppgave å holde og dele innholdet, uten å tenke på hvordan det 
                     skal presenteres. Det gjør det mulig å levere innholdet til flere plattformer gjennom en API. Fordelene er at 
                     headless sikrer gjenbruk av innholdet, siden du enkelt kan bytte medier du gir innholdet til. Du får lov til å 
                     presentere innholdet slik du vil, og nettsiden vil generelt sett være sikrere mot hacking, fordi innholdet er 
                     separat fra presentasjonsmediet. Ulempen er at headless krever mer programmeringskunnskap å få til, fordi den som 
                     oftest ikke presenterer innholdet imens du lager det.</p> <!--Kilde: https://www.sanity.io/headless-cms/ og powerpoint fra forelesninger-->
-                <img class="cmslogo" src="./img/5847f59fcef1014c0b5e4898.png" alt="Bilde av Wordpress sin logo"> <!--Kilde: https://assets.stickpng.com/images/5847f59fcef1014c0b5e4898.png-->
+            </article>
+            <article>
+                <img src="./img/5847f59fcef1014c0b5e4898.png" alt="Bilde av Wordpress sin logo"> <!--Kilde: https://assets.stickpng.com/images/5847f59fcef1014c0b5e4898.png-->
+                <h2>Wordpress</h2>
                 <p>Wordpress er en opensource seamless cms. Den har størst mengde brukere av alle CMS, 
                     og står for 43% av alle websider laget på nett. Du finner over ti tusen ferdigmaler å velge mellom, 
                     og det er mange utviklere som bidrar med nye utvidelser og maler daglig. Ulempen med denne populariteten, 
                     er at den er et stort mål for hacking. Du må passe på hvilke utvidelser du installerer, 
                     etter som at hvem som helst kan utvikle utvidelser. Wordpress tilbyr også en betalt versjon, 
                     som har profesjonell support tilgjengelig døgnet rundt.</p><!--Kilde: https://wordpress.org/about/ og https://wordpress.com/features/-->
-                <img class="cmslogo" src="./img/Squarespace-Logo-2010-2018.png" alt="Bilde av Squarespace logo"><!--Kilde:https://logos-world.net/squarespace-logo/-->
+            </article>
+            <article>
+                <img src="./img/Squarespace-Logo-2010-2018.png" alt="Bilde av Squarespace logo"><!--Kilde:https://logos-world.net/squarespace-logo/-->
+                <h2>Squarespace</h2>
                 <p>Squarespace er en closed source seamless cms. De har mange ferdigmaler, og noen utvidelser å velge mellom.
                       De har ikke like mange utvidelser som Wordpress, ettersom at de manuelt godkjenner hvilke plugins som 
                       blir støttet. Fordelen med denne formen for kontroll, er at utvidelsene generelt sett er sikrere å bruke. 
                       Du må abonnere for å bruke Squarespace, men til gjengjeld får du mer støtte dersom du møter på problemer.</p><!--Kilde:https://www.squarespace.com/about/company-->
             </article>
-        </div>
+        </section>
         <div class="Tabell">
             <div class="Rad"></div>
             <div class="RadTittel"><caption><h4>Fordeler</h4></caption></div>
@@ -162,26 +172,40 @@
                 </p>
             </p></div>
         </div>
+        <section class="share-container">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" target="_blank" data-show-count="false">Tweet</a>
+            <a data-href="https://itstud.hiof.no/~granits/webserver/cms.html" class="fb-share-button" data-layout="button" target="_blank"></a>
+        </section>
     </main>
-    <footer>
-        <div class="sosialmedia">
-            <a href="https://www.instagram.com/granitxhaka/" target="_blank">
-                <p>
-                    <i class="fa-brands fa-instagram"> Granit.s<br>Instagram</i>
-                </p>
-            </a>
-            <a href="https://www.facebook.com/granits.95/" target="_blank">
-                <p>
-                    <i class="fa-brands fa-facebook"> Granits.95<br>Facebook</i>
-                </p>
-            </a>
-            <a href="https://discord.com/users/212684280260722698" target="_blank">
-                <p>
-                    <i class="fa-brands fa-discord"> Lazy#6316<br>Discord</i>
-                </p>
-            </a>
-        </div>
+    <footer class="sosialmedia">
+        <a href="https://www.instagram.com/granitxhaka/" target="_blank">
+            <p>
+                <i class="fa-brands fa-instagram"> Granit.s<br>Instagram</i>
+            </p>
+        </a>
+        <a href="https://www.facebook.com/granits.95/" target="_blank">
+            <p>
+                <i class="fa-brands fa-facebook"> Granits.95<br>Facebook</i>
+            </p>
+        </a>
+        <a href="https://discord.com/users/212684280260722698" target="_blank">
+            <p>
+                <i class="fa-brands fa-discord"> Lazy#6316<br>Discord</i>
+            </p>
+        </a>
     </footer>
-    <script src="ham.js"></script>   
+    <script src="ham.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : 'your-app-id',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v15.0'
+          });
+        };
+      </script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
