@@ -189,10 +189,11 @@ footer i{
     color: white;
 }
 
-.logo{
-    font-size: 2rem;
-    padding-left: 1rem;
-}
+.logo {
+    padding-left: 0.5rem;
+    height: 64px;
+    width: 64px;
+  }
 
 #ham-icon{
     display: block;
