@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Kontakt skjema og kart over plassering">
+    <meta property="og:url"                content="http://127.0.0.1:5500/Webutviklig_Oblig3_Granit-Salihu/kontaktoss.html"/>
+    <meta property="og:type"               content="article"/>
+    <meta property="og:title"              content="Kontakt oss"/>
+    <meta property="og:description"        content="Du finner oss her"/>
+    <meta property="og:image"              content="https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000"/>
+    <!--Twitter-->
+    <meta name="twitter:card"              content="summary_large_image"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
+    <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/innhold.css">
+    <title>Kontakt oss</title>
+</head>
+<body>
+    <header>
+        <h3>Webutvikling eksamen del 2</h3>
+    </header>
+    <nav>
+        <a href="index.html">
+            <img class="logo" src="./favicon/android-chrome-512x512.png" alt="Hjem knapp og logo">
+        </a>
+        <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
+        <ul id="main-menu" style="display:none">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="analyse.html">Analyse</a></li>
+            <li><a href="uuvsseo.html">UU vs SEO</a></li>
+            <li><a href="cms.html">CMS</a></li>
+            <li><a href="kontaktoss.html">Kontakt oss</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="kontaktskjema">
+            <form action="***" method="post">
+                <label>Navn: </label>
+                <input type="text" name="name" id="name" placeholder="Fornavn" autocomplete="given-name">
+                <label>Alder: </label>
+                <input type="number" name="age" id="age" placeholder="Alder i år">
+                <label>Mail: </label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="ole.nordman@hiof.no" autocomplete="email">
+                <label>Beskrivelse: </label>
+                <textarea name="description" placeholder="Beskriv hva henvendelsen gjelder med noen få ord"></textarea>
+                Trykk på registrer for å fullføre registreringen
+                <button type="submit">Registrer</button>
+            </form>
+        </section>
+        <div class="googlemaps">
+            <article id="googlemapsbeholder">
+                <section class="kontakt-muligheter">
+                    <p>
+                        <i class="fa-solid fa-phone"></i> +47 48 48 48 48
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"> granits@hiof.no</i>
+                    </p>
+                </section>
+                <div class="kontakt-tekst">
+                    <p>Du finner oss her</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1884406378012!2d11.35061461606424!3d59.12924748158928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1664453108892!5m2!1sno!2sno" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </div>
+    </main>
+    <footer class="sosialmedia">
+        <a href="https://www.instagram.com/granitxhaka/" target="_blank">
+            <p>
+                <i class="fa-brands fa-instagram"> Granit.s<br>Instagram</i>
+            </p>
+        </a>
+        <a href="https://www.facebook.com/granits.95/" target="_blank">
+            <p>
+                <i class="fa-brands fa-facebook"> Granits.95<br>Facebook</i>
+            </p>
+        </a>
+        <a href="https://discord.com/users/212684280260722698" target="_blank">
+            <p>
+                <i class="fa-brands fa-discord"> Lazy#6316<br>Discord</i>
+            </p>
+        </a>
+    </footer>
+    <script src="ham.js"></script>
+</body>
+</html>

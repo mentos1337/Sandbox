@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Finnes mange forskjellige content management systemer, blant annet headless og seamless">
+    <!--Facebook, pinterest & twitter-->
+    <meta property="og:url"                content="http://127.0.0.1:5500/Webutviklig_Oblig3_Granit-Salihu/cms.html"/>
+    <meta property="og:type"               content="article"/>
+    <meta property="og:title"              content="Content management system"/>
+    <meta property="og:description"        content="Seamless CMS er en tradisjonell content management system. Den kombinerer presentasjon av innhold og innholdet til et system."/>
+    <meta property="og:image"              content="https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000"/>
+    <!--Twitter-->
+    <meta name="twitter:card"              content="summary_large_image"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
+    <link href="fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/innhold.css">
+    <title>CMS</title>
+</head>
+<body>
+    <header>
+        <h3>Webutvikling eksamen del 2</h3>
+    </header>
+    <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>
+    <nav>
+        <a href="index.html">
+            <img class="logo" src="./favicon/android-chrome-512x512.png" alt="Hjem knapp og logo">
+        </a>
+        <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
+        <ul id="main-menu" style="display:none">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="analyse.html">Analyse</a></li>
+            <li><a href="uuvsseo.html">UU vs SEO</a></li>
+            <li><a href="cms.html">CMS</a></li>
+            <li><a href="kontaktoss.html">Kontakt oss</a></li>
+        </ul>
+    </nav>
+    <main class="CMS">
+        <div class="tittel">
+            <h1>Content management system</h1>
+        </div>
+        <section id="hovedinnhold" tabindex="-1">
+            <section class="artikkelkort">
+                <article>
+                    <img src="./img/flat-design-cms-illustration_52683-54731.jpg" alt="CMS kan enkelt brukes uten programmeringskunnskaper"> <!--Kilde:https://img.freepik.com/free-vector/flat-design-cms-illustration_52683-54731.jpg?w=2000-->
+                    <h2>CMS</h2>
+                    <p>Seamless CMS er en tradisjonell content management system. Den kombinerer presentasjon av innhold og innholdet til et system. 
+                        Det gjør det enkelt å opprettholde, og publisere nytt innhold uten behov for programmeringskunnskap. 
+                        Ulempen med seamless cms er at innholdet blir låst til en plattform, og er derfor ikke gjenbrukbar skulle du ønske å dele innholdet 
+                        til andre plattformer enn web. Det er også vanskelig å bytte verktøyene som brukes til å forme innholdet.</p>
+                        <!--Kilde: https://www.udig.com/digging-in/traditional-cms-vs-headless-cms/ og powerpoint fra forelesninger-->
+                </article>
+                <article>
+                    <img src="./img/headless-cms-1_e5ymea.jpg" alt="Bildet separerer backend fra frontend"> <!--Kilde:https://www.cmscritic.com/wp-content/themes/cmscritic/img/cloudinary/headless-cms-1_e5ymea.png-->
+                    <h2>Headless CMS</h2>
+                    <p>Headless CMS, er en ny type content management system. I motsetning til seamless, så blir backend og frontend 
+                        to forskjellige systemer. Headless cms har i oppgave å holde og dele innholdet, uten å tenke på hvordan det 
+                        skal presenteres. Det gjør det mulig å levere innholdet til flere plattformer gjennom en API. Fordelene er at 
+                        headless sikrer gjenbruk av innholdet, siden du enkelt kan bytte medier du gir innholdet til. Du får lov til å 
+                        presentere innholdet slik du vil, og nettsiden vil generelt sett være sikrere mot hacking, fordi innholdet er 
+                        separat fra presentasjonsmediet. Ulempen er at headless krever mer programmeringskunnskap å få til, fordi den som 
+                        oftest ikke presenterer innholdet imens du lager det.</p> <!--Kilde: https://www.sanity.io/headless-cms/ og powerpoint fra forelesninger-->
+                </article>
+                <article>
+                    <img src="./img/5847f59fcef1014c0b5e4898.png" alt="Bilde av Wordpress sin logo"> <!--Kilde: https://assets.stickpng.com/images/5847f59fcef1014c0b5e4898.png-->
+                    <h2>Wordpress</h2>
+                    <p>Wordpress er en opensource seamless cms. Den har størst mengde brukere av alle CMS, 
+                        og står for 43% av alle websider laget på nett. Du finner over ti tusen ferdigmaler å velge mellom, 
+                        og det er mange utviklere som bidrar med nye utvidelser og maler daglig. Ulempen med denne populariteten, 
+                        er at den er et stort mål for hacking. Du må passe på hvilke utvidelser du installerer, 
+                        etter som at hvem som helst kan utvikle utvidelser. Wordpress tilbyr også en betalt versjon, 
+                        som har profesjonell support tilgjengelig døgnet rundt.</p><!--Kilde: https://wordpress.org/about/ og https://wordpress.com/features/-->
+                </article>
+                <article>
+                    <img src="./img/Squarespace-Logo-2010-2018.png" alt="Bilde av Squarespace logo"><!--Kilde:https://logos-world.net/squarespace-logo/-->
+                    <h2>Squarespace</h2>
+                    <p>Squarespace er en closed source seamless cms. De har mange ferdigmaler, og noen utvidelser å velge mellom.
+                          De har ikke like mange utvidelser som Wordpress, ettersom at de manuelt godkjenner hvilke plugins som 
+                          blir støttet. Fordelen med denne formen for kontroll, er at utvidelsene generelt sett er sikrere å bruke. 
+                          Du må abonnere for å bruke Squarespace, men til gjengjeld får du mer støtte dersom du møter på problemer.</p><!--Kilde:https://www.squarespace.com/about/company-->
+                </article>
+            </section>
+            <div class="Tabell">
+                <div class="Rad"></div>
+                <div class="RadTittel"><h3>Fordeler</h3></div>
+                <div class="RadTittel"><h3>Ulemper</h3></div>
+                <div class="RadTittel"><h3>Likheter / Ulikheter</h3></div>
+                <div class="RadTittel"><h3>Open Source</h3></div>
+                <div class="Rad">
+                        <p>
+                            Flere kan utvikle utvidelser og ferdigmaler til programmet.
+                        </p>
+                        <p>
+                            Er gratis, åpen for alle
+                        </p>
+                        <p>
+                            Har du ferdigheter kan du bygge om programmet til å bare innholde det du trenger.
+                        </p></div>
+                <div class="Rad">
+                        <p>
+                            Sikkerhet er en bekymring, ettersom at hvem som helst får lov til å skape utvidelser
+                        </p>
+                        <p>
+                            Kvaliteten på utvidelsene og ferdigmalene kan ha stor variasjon
+                        </p></div>
+                <div class="Rad">
+                        <p>
+                            Enkel å bruke, trenger ikke å kunne programmering
+                        </p>
+                        <p>
+                            Har mange utvidelser til mer funksjonalitet
+                        </p>
+                        <p>
+                            Kommer med en integrert søkemotor som gjør det enkelt å navigere din side.
+                        </p></div>
+                <div class="RadTittel"><h3>Proprietære</h3></div>
+                <div class="Rad">                
+                    <p>
+                        Utvidelsene blir godkjent av offesielle utviklere, gjør det mer sikkert å bruke.
+                    </p><!--Kilde: https://www.squarespace.com/feature-index--></div>
+                <div class="Rad">            
+                    <p>
+                        Du får ikke tilgang til backend, så du er begrenset i utvidelser du kan lage.
+                    </p><!--Kilde: https://www.squarespace.com/feature-index--></div>
+                <div class="Rad">
+                    <p>
+                        Enkel å bruke, trenger ikke å kunne programmering
+                    </p>
+                    <p>
+                        Har mange utvidelser til mer funksjonalitet
+                    </p>
+                    <p>
+                        Kommer med en integrert søkemotor som gjør det enkelt å navigere din side.
+                    </p></div>
+                <div class="RadTittel"><h3>Spesielle</h3></div>
+                <div class="Rad">
+                        <p>
+                            CMS har ingen bloatware, den er spisset inn mot formålet.
+                        </p>
+                </div>
+                <div class="Rad">
+                        <p>
+                            Har lite til ingen ekstra funksjonalitet utenfor formålet.
+                        </p></div>
+                <div class="Rad">                
+                    <p>
+                        Enkel å bruke, trenger ikke å kunne programmering
+                    </p>
+                    <p>
+                        Har ikke like mye funksjonalitet, som de andre typene CMS.
+                    </p></div>
+            </div>
+            <section class="share-container">
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" target="_blank" data-show-count="false">Tweet</a>
+                <a href="https://itstud.hiof.no/~granits/webserver/cms.html" class="fb-share-button" data-layout="button" target="_blank"></a>
+            </section>
+        </section>
+    </main>
+    <footer class="sosialmedia">
+        <a href="https://www.instagram.com/granitxhaka/" target="_blank">
+            <p>
+                <i class="fa-brands fa-instagram"> Granit.s<br>Instagram</i>
+            </p>
+        </a>
+        <a href="https://www.facebook.com/granits.95/" target="_blank">
+            <p>
+                <i class="fa-brands fa-facebook"> Granits.95<br>Facebook</i>
+            </p>
+        </a>
+        <a href="https://discord.com/users/212684280260722698" target="_blank">
+            <p>
+                <i class="fa-brands fa-discord"> Lazy#6316<br>Discord</i>
+            </p>
+        </a>
+    </footer>
+    <script src="ham.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : 'your-app-id',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v15.0'
+          });
+        };
+      </script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+      <script async src="https://platform.twitter.com/widgets.js"></script>
+</body>
+</html>
