@@ -1,0 +1,445 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 3rem 4rem auto auto;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background-image:url("../img/low-poly-abstract-background-free-vector.jpg");
+    background-size: cover;
+}
+
+header h3{
+    color: white;
+    text-shadow: 1px 4px 3px black;
+    font-size: 1rem;
+}
+
+nav{
+    grid-area: nav;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav i{
+    color: white;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    color: white;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+}
+
+.artikkelkort{
+    grid-area: artikkel;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+.artikkelkort h2{
+    margin: 0.2rem;
+    font-size: 3vw;
+}
+
+.artikkelkort p{
+    font-size: 2vw;
+    text-align: start;
+    margin: 0 0.4rem 2rem 0.4rem;
+}
+
+.artikkelkort img{
+    margin-top: 0.5vw;
+    height: 26vw;
+    width: 97%;
+}
+
+.artikkelkort .cmslogo{
+    height: 12vw;
+    width: 40%;
+}
+
+article{
+    width: 70%;
+    background-color: rgb(243, 242, 242);
+}
+
+.Tabell{
+    grid-area: tabell;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.TabellUU{
+    grid-area: tabell;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    padding: 1rem 3rem 0 3rem;
+}
+.Rad{
+    display: block;
+    border: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-color: rgba(0, 0, 0, 0.514);
+    padding: 0 0 0 0.5rem;
+    font-size: 2.5vw;
+    line-height: 1.5;
+}
+.rad{
+    display: flex;
+    border: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-color: rgba(0, 0, 0, 0.514);
+    justify-content: center;
+    font-size: 1vw;
+    align-items: center;
+    line-height: 1.5;
+}
+.rad th{
+    font-size: 2.5vw;
+}
+.rad img{
+    height: 80%;
+    width: 60%;
+}
+.RadTittel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-color: rgba(0, 0, 0, 0.514);
+    font-size: 3vw;
+}
+
+.googlemaps{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0.8rem 0 0 0;
+}
+
+.tlf p{
+    margin: 0rem;
+}
+
+.tlf p i{
+    color: black;
+}
+.kontakt-muligheter{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+}
+.kontakt-tekst p{
+    margin: 0;
+}
+#googlemapsbeholder{
+    width: 70%;
+    height: 100%;
+}
+
+.sosialmedia{
+    grid-area: "footer";
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(20, 13, 1);
+    margin-top: 1rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer i{
+    color: white;
+}
+
+.logo {
+    padding-left: 0.5rem;
+    height: 64px;
+    width: 64px;
+  }
+
+#ham-icon{
+    display: block;
+    position: absolute;
+    right: 35px;
+  }
+
+#share-icon{
+    display: block;
+    position: absolute;
+    right: 72px;
+}
+
+#main-menu{
+    position: absolute;
+    top: 111px;
+    background-color: #2f2f2f;
+    width: 100%;
+}
+  #main-menu li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  #main-menu a{
+    color: #fff;
+    padding: 0.5rem 0;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  #share-menu{
+    position: absolute;
+    top: 471px;
+    background-color: #2f2f2f;
+  }
+  #share-menu li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  #share-menu a{
+    color: #fff;
+    padding: 0.5rem 0;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .kontaktskjema{
+    display: flex;
+    justify-content: center;
+  }
+  .tittel{
+    grid-area: tittel;
+    text-align: center;
+  }
+  .share-container{
+    grid-area: share;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+  .snarvei{
+    display: none;
+  }
+  h1{
+    font-size: 4vw;
+  }
+  .tilgjenglighet{
+    display: flex;
+    justify-content: center;
+
+  }
+@media only screen and (max-width: 500px){
+    .TabellUU{
+        padding:unset;
+    }
+    .Tabell{
+        padding:unset;
+    }
+    article{
+        width: 100%;
+    }
+    .artikkelkort img{
+        height: 40vw;
+    }
+    .artikkelkort h2{
+        font-size: 4.6vw;
+    }
+    .artikkelkort p{
+        font-size: 3.5vw;
+    }
+    .Rad{
+        font-size: 3.5vw;
+    }
+    h1{
+        font-size: 5vw;
+      }
+    .RadTittel{
+        font-size: 4vw;
+    }
+    .share-container{
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+    .kontakt-muligheter{
+        font-size: 4vw;
+    }
+    #googlemapsbeholder{
+        width: 100%;
+    }
+    .googlemaps{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 800px){
+    .snarvei {
+        display: block;
+        position: absolute;
+        left: -2000px;
+        top: 0px;
+        background-color: black;
+        color: yellow;
+    }
+    .snarvei:focus {
+        top: 20px;
+        left: 90px;
+    }
+    #hovedinnhold{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-size: 2vw;
+      }
+    .Tabell{
+        padding-top: 1rem;
+        width: 50%;
+        justify-self: center;
+    }
+    .TabellUU{
+        width: 50%;
+        justify-self: center;
+    }
+    .Tabell p{
+        font-size: 0.8vw;
+    }
+    .TabellUU p{
+        font-size: 0.8vw;
+    }
+    .RadTittel{
+        font-size: 0.9vw;
+    }
+    body{
+        grid-template-rows: 3rem 2.5rem auto auto;
+    }
+    .UU{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "tittel" "artikkel" "tabell" "share";
+    }
+    .CMS{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "tittel" "artikkel" "tabell" "share";
+    }
+    article {
+        box-shadow: 0px 6px 10px 4px rgb(0 0 0 / 26%);
+        width: 34%;
+        height: auto;
+    }
+    .UU article{
+        width: 22%;
+    }
+    .UU article h2{
+        padding: 1rem 0 1rem 0;
+    }
+    .artikkelkort{
+        justify-self: center;
+        width: 70%;
+    }
+    .UU .artikkelkort{
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .artikkelkort img{
+        height: 10vw;
+    }
+    .artikkelkort p{
+        font-size: 0.8vw;
+    }
+    .artikkelkort h2{
+        font-size: 1.5vw;
+    }
+    .sosialmedia{
+        flex-direction: row;
+    }
+    a:hover {
+        transform: scale(1.4);
+    }
+    a:focus {
+        transform: scale(1.4);
+    }
+    nav ul li{
+    display: inline-block;
+    }
+    #ham-icon{
+    display: none;
+    }
+    #main-menu{
+        display: flex !important;
+        justify-content: flex-end;
+        position: static;
+        background-color: transparent;
+    }
+    #share-menu{
+        display: flex !important;
+        justify-content: flex-end;
+        position: static;
+        background-color: transparent;
+    }
+    html{
+        font-size: calc(1em + 1vw);
+    }
+    .logo:hover{
+        transform: scale(1.1);
+    }
+    #googlemapsbeholder{
+        width: 50%;
+        height: 100%;
+    }
+    .analyse{
+        display: grid;
+        grid-template-areas: "analyse" "share";
+    }
+    .analyse-grid{
+        grid-area: analyse;
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.2fr;
+        width: 50%;
+        place-self: center;
+        margin-top: 1rem;
+    }
+}
